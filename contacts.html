@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="libs/bootstrap-select-1.13.14/css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Мониторинг обменников</title>
+  </head>
+  <body>
+
+    <div class="container _cont-nav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" width="100" alt="Логотип">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="index.html">Мониторинг <span class="sr-only">(текущая)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="services.html">Сервисы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-uppercase" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Левый блок с таблицей  -->
+    <div class="container _cont-table">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="_cont-table__tabs">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link border-0 active" id="table-tab" data-toggle="tab" href="#table" role="tab" aria-controls="table" aria-selected="true">Таблица</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link border-0" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false">Список</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link border-0" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="false">Популярное</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="table" role="tabpanel" aria-labelledby="table-tab">
+                <table class="table table-borderless table-striped text-white">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Страна</th>
+                      <th scope="col">Сервис</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#ru-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Россия</td>
+                      <td>Telegram</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#uk-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Украина</td>
+                      <td>Viber</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                <table class="table table-borderless table-striped text-white">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Страна</th>
+                      <th scope="col">Сервис</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#ru-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Россия</td>
+                      <td>Telegram</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#uk-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Украина</td>
+                      <td>Viber</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                <table class="table table-popular table-borderless table-striped text-white">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Страна</th>
+                      <th scope="col">Сервис</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#ru-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Россия</td>
+                      <td>Telegram</td>
+                      <td class="text-center">-0,5%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#uk-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Украина</td>
+                      <td>Viber</td>
+                      <td class="text-center">6,5%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Правый блок с аккордеоном  -->
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <div class="_cont-table__statistic">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12 col-md-5">
+                  <div class="_info-connect">
+                    <h4>Как с нами связаться?</h4>
+                    <p>
+                      Мы всегда рады ответить на интересующие вас вопросы и выслушать ваши предложения по улучшению сервиса. 
+                      Адрес по которому вы можете связаться с нами:
+                    </p>
+                    <a href="#!">
+                      <img src="img/adress-email.png" alt="Картинка конверта">
+                      E-mail:info@bestchange.ru
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                  <form class="form-feedback">
+                    <h4>Форма обратной связи</h4>
+                    <p>
+                      Есть вопросы? Возникли какие-то проблемы? Или у вас есть предложения для сотручества. 
+                      Заполните эту форму правильно и подробно, тогда мы сможем помочь вам, как можно быстрее. 
+                    </p>
+                    <div class="col _col-select">
+                      <select class="selectpicker">
+                        <option selected disabled>Выбрать тему вопроса</option>
+                        <option>Общий вопрос</option>
+                        <option>Добавления сервиса</option>
+                        <option>Сотрудничество</option>
+                        <option>Предложение</option>
+                        <option>Прочее</option>
+                      </select>
+                    </div>
+                    <div class="col _col-input_name">
+                      <input type="text" class="form-control _input-name" placeholder="Имя">
+                    </div>
+                    <div class="col">
+                      <input type="email" class="form-control _input-email" id="exampleFormControlInput1" placeholder="E-mail">
+                    </div>
+                    <div class="col">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <div class="col">
+                      <button type="submit" class="btn _btn-form-feedback">Отправить</button>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                        <label class="form-check-label" for="gridCheck">
+                          Я даю своё согласие на обработку персональных данных
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/bootstrap-select-1.13.14/js/bootstrap-select.min.js"></script>
+  </body>
+</html>
