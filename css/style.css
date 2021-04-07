@@ -91,7 +91,6 @@ body {
 /* Стили контейнеров и таблиц */
 ._cont-nav {
   padding-bottom: 50px;
-  padding-right: 0;
 }
 
 ._cont-nav > nav {

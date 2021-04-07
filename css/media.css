@@ -5,9 +5,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  ._cont-nav {
-    padding-right: 15px;
-  }
   ._cont-table__tabs {
     margin-bottom: 70px;
   }
