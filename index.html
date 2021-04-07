@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Мониторинг обменников</title>
+  </head>
+  <body>
+
+    <div class="container _cont-nav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" width="100" alt="Логотип">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-uppercase" href="index.html">Мониторинг <span class="sr-only">(текущая)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="services.html">Сервисы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Левый блок с таблицей  -->
+    <div class="container _cont-table">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="_cont-table__tabs">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link border-0 active" id="table-tab" data-toggle="tab" href="#table" role="tab" aria-controls="table" aria-selected="true">Таблица</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link border-0" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false">Список</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link border-0" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="false">Популярное</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="table" role="tabpanel" aria-labelledby="table-tab">
+                <table class="table table-borderless table-striped text-white">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Страна</th>
+                      <th scope="col">Сервис</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#ru-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Россия</td>
+                      <td>Telegram</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#uk-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Украина</td>
+                      <td>Viber</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                <table class="table table-borderless table-striped text-white">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Страна</th>
+                      <th scope="col">Сервис</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#ru-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Россия</td>
+                      <td>Telegram</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#uk-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Украина</td>
+                      <td>Viber</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                <table class="table table-popular table-borderless table-striped text-white">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Страна</th>
+                      <th scope="col">Сервис</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#ru-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Россия</td>
+                      <td>Telegram</td>
+                      <td class="text-center">-0,5%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex justify-content-end">
+                          <svg class="icon">
+                            <use xlink:href="img/sprite-flags.svg#uk-flags"></use>
+                          </svg>
+                        </div>
+                      </th>
+                      <td>Украина</td>
+                      <td>Viber</td>
+                      <td class="text-center">6,5%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Правый блок с таблицей  -->
+        <div class="col-sm-12 col-md-12 col-lg-8">
+
+          <div class="_cont-table__statistic">
+
+            <table class="table table-statistic table-borderless table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Название сервиса</th>
+                  <th scope="col">Страна</th>
+                  <th scope="col">Сервис</th>
+                  <th scope="col">Цена</th>
+                  <th scope="col">Количество</th>
+                  <th scope="col">Отзывы</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">sms-activate</th>
+                  <td>Россия</td>
+                  <td>Telegram</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span>0</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">sms-activate</th>
+                  <td>Украина</td>
+                  <td>Viber</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span class="positive-reviews">2</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">sms-activate</th>
+                  <td>Россия</td>
+                  <td>Telegram</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span>0</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">sms-activate</th>
+                  <td>Украина</td>
+                  <td>Viber</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span class="negative-reviews">2</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">sms-activate</th>
+                  <td>Россия</td>
+                  <td>Telegram</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span>0</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">sms-activate</th>
+                  <td>Украина</td>
+                  <td>Viber</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span class="positive-reviews">2</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">sms-activate</th>
+                  <td>Россия</td>
+                  <td>Telegram</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span>0</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">sms-activate</th>
+                  <td>Украина</td>
+                  <td>Viber</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span class="negative-reviews">2</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    -->
+  </body>
+</html>

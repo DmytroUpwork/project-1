@@ -1,0 +1,273 @@
+/* Шрифты */
+@font-face {
+	font-family: 'Montserrat-SemiBold';
+	src: url('../fonts/montserrat/Montserrat-SemiBold.eot');
+	src: local('☺'), url('../fonts/montserrat/Montserrat-SemiBold.woff') format('woff'), url('../fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype'), url('../fonts/montserrat/Montserrat-SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url('../fonts/montserrat/Montserrat-Medium.eot');
+	src: local('☺'), url('../fonts/montserrat/Montserrat-Medium.woff') format('woff'), url('../fonts/montserrat/Montserrat-Medium.ttf') format('truetype'), url('../fonts/montserrat/Montserrat-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url('../fonts/montserrat/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'), url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype'), url('../fonts/montserrat/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url('../fonts/montserrat/Montserrat-Light.eot');
+	src: local('☺'), url('../fonts/montserrat/Montserrat-Light.woff') format('woff'), url('../fonts/montserrat/Montserrat-Light.ttf') format('truetype'), url('../fonts/montserrat/Montserrat-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat-Medium';
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+/* Стили svg */
+.icon { 
+  width: 28px; 
+  height: 28px;
+}
+
+/* Стили меню  */
+.navbar-nav > .nav-item > .nav-link {
+  padding: 6px 15px;
+  position: relative;
+}
+
+.navbar-nav > .nav-item.active .nav-link {
+  color: #fff;
+  background: #0887BD;
+  border-radius: 20px;
+  border: none;
+}
+
+.navbar-nav > .nav-item .nav-link:before {
+  content: "";
+  border: 1px solid #0887BD;
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.navbar-nav > .nav-item:hover .nav-link:before {
+  opacity: 1;
+}
+
+.navbar-nav > .nav-item.active .nav-link:before {
+  opacity: 0;
+}
+
+.navbar-nav > .nav-item.active .nav-link:hover {
+  border: none;
+}
+
+.navbar-nav > .nav-item:not(:last-of-type) > .nav-link {
+  margin-right: 24px;
+}
+
+/* Стили контейнеров и таблиц */
+._cont-nav {
+  padding-bottom: 50px;
+  padding-right: 0;
+}
+
+._cont-nav > nav {
+  padding: .5rem 0;
+}
+
+._cont-table__tabs {
+  background: #039BE6;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 110px;
+  filter: drop-shadow(4px 7px 30px rgba(3, 155, 230, 0.2));
+  font-family: 'Montserrat-SemiBold';
+}
+
+._cont-table__tabs > .nav {
+  padding-bottom: 50px;
+  width: 101%;
+  margin-left: -1px;
+}
+
+._cont-table__tabs > .nav > .nav-item {
+  width: 33.3%;
+}
+
+.nav-tabs > li > a {
+  padding: 14px 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #039BE6;
+  color: #fff;
+}
+
+.nav-tabs .nav-link {
+  background-color: #fff;
+  text-align: center;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #0887BD;
+}
+
+table thead {
+  font-family: 'Montserrat-Light';
+}
+
+.table-popular tbody tr td:last-child {
+  color: #FFE15A;
+}
+
+/* Правая таблица  */
+._cont-table__statistic {
+  background: #F3F3F3;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+  filter: drop-shadow(4px 7px 30px rgba(3, 155, 230, 0.2));
+}
+
+table.table-statistic th,
+table.table-statistic td {
+  text-align: center;
+}
+
+._cont-table__statistic > table.table-statistic > thead {
+  font-family: 'Montserrat-SemiBold';
+  color: #007bff;
+  background: #fff;
+}
+
+._cont-table__statistic > table.table-statistic > tbody {
+  background: #039BE6;
+}
+
+td.t-price {
+  color: #fff;
+}
+
+td span.all-reviews {
+  color: #FFE15A;
+}
+
+td span.negative-reviews {
+  color: #FF2531;
+}
+
+td span.positive-reviews {
+  color: #37f807;
+}
+
+
+
+/* Контейнер с аккордеоном на странице faq  */
+._cont-accordion {
+  padding-bottom: 100px;
+}
+._cont-accordion h4 {
+  padding: 21px 23px;
+}
+
+/* Таблица с кол-вом доступных номеров  */
+.available-rooms td.service-works {
+  color: #FFE15A;
+}
+
+.available-rooms td.t-number {
+  color: #fff;
+}
+
+/* Стили аккордеона  */
+.accordion>.card {
+  border: 0;
+  background-color: transparent;
+}
+
+.accordion>.card .card-header {
+  border-bottom: 0;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 10px rgba(3, 155, 230, 0.2);
+  margin: 11px 23px;
+  padding: 5px 11px;
+}
+
+.accordion>.card:last-child .card-header {
+  margin: 11px 23px 54px 23px;
+}
+
+.accordion>.card .card-body {
+  font-size: 18px;
+}
+
+._btn-accordion {
+  font-size: 22px;
+  position: relative;
+}
+
+._btn-accordion:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  top: 13px;
+  width: 20px;
+  height: 20px;
+  background: #0887BD
+}
+
+._btn-accordion:after {
+  content: "";
+  position: absolute;
+  right: 4.7px;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(225deg);
+  transition: .3s;
+}
+
+.collapsed._btn-accordion:after {
+  top: 15px;
+  transform: rotate(45deg);
+}
+
+._c-a__questions-all {
+  background: #0887BD;
+  color: #fff;
+  text-align: center;
+  margin: 0 23px;
+  padding: 21px 39px;
+  font-size: 18px;
+}
+
