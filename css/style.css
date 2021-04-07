@@ -144,7 +144,7 @@ table thead {
   font-family: 'Montserrat-Light';
 }
 
-.table-popular tbody tr td:last-child {
+#table-popular tbody tr td:last-child {
   color: #FFE15A;
 }
 
