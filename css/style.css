@@ -103,7 +103,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   padding-bottom: 110px;
-  filter: drop-shadow(4px 7px 30px rgba(3, 155, 230, 0.2));
+  box-shadow: 4px 7px 30px rgba(3, 155, 230, 0.2);
   font-family: 'Montserrat-SemiBold';
 }
 
@@ -154,7 +154,7 @@ table thead {
   border-radius: 5px 5px 0px 0px;
   overflow: hidden;
   padding-bottom: 110px;
-  filter: drop-shadow(4px 7px 30px rgba(3, 155, 230, 0.2));
+  box-shadow: 4px 7px 30px rgba(3, 155, 230, 0.2);
 }
 
 table.table-statistic th,
