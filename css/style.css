@@ -148,12 +148,16 @@ table thead {
   color: #FFE15A;
 }
 
+/* .table td {
+  text-align: center;
+} */
+
 /* Правая таблица  */
 ._cont-table__statistic {
   background: #F3F3F3;
   border-radius: 5px 5px 0px 0px;
   overflow: hidden;
-  padding-bottom: 110px;
+  padding: 15px 0 110px;
   box-shadow: 4px 7px 30px rgba(3, 155, 230, 0.2);
 }
 
@@ -198,11 +202,11 @@ td span.positive-reviews {
 }
 
 /* Таблица с кол-вом доступных номеров  */
-.available-rooms td.service-works {
+td.service-works {
   color: #FFE15A;
 }
 
-.available-rooms td.t-number {
+td.t-number {
   color: #fff;
 }
 
@@ -404,4 +408,19 @@ td span.positive-reviews {
   background-image: url("../img/checkbox.png");
   position: absolute;
   left: -35px;
+}
+
+/* Стили datatable */
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #039BE6;
+}
+
+.dataTables_length,
+.dataTables_info {
+  padding-left: 13px;
+}
+
+.dataTables_filter,
+.dataTables_paginate {
+  padding-right: 13px;
 }

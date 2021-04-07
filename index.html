@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> 
+    <!-- Стили DataTable  --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <!-- Мои стили  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Мониторинг обменников</title>
@@ -55,6 +59,41 @@
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="table" role="tabpanel" aria-labelledby="table-tab">
+
+
+
+
+
+                <!-- <table id="example1" class="table table-striped" style="width:100%">
+                  <thead>
+                      <tr>
+                        <th>Страна</th>
+                        <th>Сервис</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Россия</td>
+                      <td>Telegram</td>
+                    </tr>
+                    <tr>
+                      <td>Украина</td>
+                      <td>Viber</td>
+                    </tr>
+                  </tbody>
+                </table> -->
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 <table class="table table-borderless table-striped text-white">
                   <thead>
                     <tr>
@@ -88,6 +127,28 @@
                     </tr>
                   </tbody>
                 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               </div>
               <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
                 <table class="table table-borderless table-striped text-white">
@@ -169,7 +230,111 @@
         <!-- Правый блок с таблицей  -->
         <div class="col-sm-12 col-md-12 col-lg-8">
           <div class="_cont-table__statistic">
-            <table class="table table-statistic table-borderless table-striped">
+
+
+
+
+
+            <table id="table-statistic" class="table table-striped" style="width:100%">
+              <thead>
+                  <tr>
+                    <th>Название сервиса</th>
+                    <th>Страна</th>
+                    <th>Сервис</th>
+                    <th>Цена</th>
+                    <th>Количество</th>
+                    <th>Отзывы</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>sms-activate</td>
+                  <td>Россия</td>
+                  <td>Telegram</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span>0</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>sms-activate</td>
+                  <td>Украина</td>
+                  <td>Viber</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span class="positive-reviews">2</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>sms-activate</td>
+                  <td>Россия</td>
+                  <td>Telegram</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span>0</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>sms-activate</td>
+                  <td>Украина</td>
+                  <td>Viber</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span class="negative-reviews">2</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>sms-activate</td>
+                  <td>Россия</td>
+                  <td>Telegram</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span>0</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>sms-activate</td>
+                  <td>Украина</td>
+                  <td>Viber</td>
+                  <td class="t-price">5р.</td>
+                  <td>1500</td>
+                  <td>
+                    <span class="negative-reviews">2</span> / <span class="all-reviews">150</span>
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- <table class="table table-statistic table-borderless table-striped">
               <thead>
                 <tr>
                   <th scope="col">Название сервиса</th>
@@ -262,7 +427,37 @@
                   </td>
                 </tr>
               </tbody>
-            </table>
+            </table> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
       </div>
@@ -272,5 +467,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Скрипт отображения svg в IE  -->
     <script src="libs/svg.js"></script>
+    <!-- Скрипты DataTable  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Мой скрипт  -->
+    <script src="js/script.js"></script>
   </body>
 </html>
