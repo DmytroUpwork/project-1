@@ -148,9 +148,19 @@ table thead {
   color: #FFE15A;
 }
 
-/* .table td {
-  text-align: center;
-} */
+#table-service,
+#table-list,
+#table-popular {
+  color: #fff;
+}
+
+.table th, .table td {
+  border-top: 0;
+}
+
+.table thead th {
+  border-bottom: 0;
+}
 
 /* Правая таблица  */
 ._cont-table__statistic {
