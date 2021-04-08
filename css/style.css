@@ -161,14 +161,6 @@ table thead {
   color: #fff;
 }
 
-.dataTables_scrollHeadInner {
-  width: 100% !important;
-}
-
-div.dataTables_scrollHead table.dataTable {
-  width: 100% !important;
-}
-
 .table th, .table td {
   border-top: 0;
 }
@@ -446,7 +438,49 @@ td.t-number {
   padding-left: 13px;
 }
 
+/* Стили верхней панели DataTable  */
+.dataTables_scrollHeadInner {
+  width: 100% !important;
+}
+
+div.dataTables_scrollHead table.dataTable {
+  width: 100% !important;
+}
+
 .dataTables_filter,
 .dataTables_paginate {
   padding-right: 13px;
+}
+
+/* Стили полосы прокрутки  */
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+  height:0px
+}
+  
+::-webkit-scrollbar-track {
+  background-color:#ecedee
+}
+  
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color:#6dc0c8;
+}
+  
+::-webkit-scrollbar-thumb:hover{
+  background-color:#56999f;
+}
+  
+::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+}
+  
+::-webkit-scrollbar{
+  width: 4px;
 }
