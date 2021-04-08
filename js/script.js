@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+    
+     
+   
+
     $('#table-service').DataTable({
         "language": {
             "url": "plug-ins/1.10.24/russian.json"
@@ -26,6 +31,9 @@ $(document).ready(function() {
         "paging": false,
     }); 
 
+
+
+
     $('#table-statistic').DataTable({
         "language": {
             "url": "plug-ins/1.10.24/russian.json"
@@ -37,5 +45,7 @@ $(document).ready(function() {
             "url": "plug-ins/1.10.24/russian.json"
         }
     }); 
+
+
 } );
 
