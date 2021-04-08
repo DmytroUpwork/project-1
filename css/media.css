@@ -2,9 +2,15 @@
   body {
     font-size: calc(10px + 6 * ((100vw - 320px) / (1440 - 320)));
   }
+
+  #table-popular_filter,
+  #table-service_filter,
+  #table-list_filter {
+    left: -145px;
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991.98px) {
   ._cont-table__tabs {
     margin-bottom: 70px;
   }
@@ -16,11 +22,22 @@
   .navbar-nav > .nav-item > .nav-link {
     margin: 20px 0 20px 0;
   }
+
+  #table-popular_filter,
+  #table-service_filter,
+  #table-list_filter {
+    left: -330px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   ._cont-table__statistic {
     overflow-x: scroll;
+  }
+  #table-popular_filter,
+  #table-service_filter,
+  #table-list_filter {
+    left: 26px;
   }
 }
 

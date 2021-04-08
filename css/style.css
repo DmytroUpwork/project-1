@@ -106,6 +106,14 @@ body {
   font-family: 'Montserrat-SemiBold';
 }
 
+#table-popular_filter,
+#table-service_filter,
+#table-list_filter {
+  position: absolute;
+  top: -27px;
+  left: -213px;
+}
+
 ._cont-table__tabs > .nav {
   padding-bottom: 50px;
   width: 101%;
