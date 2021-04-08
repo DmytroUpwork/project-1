@@ -157,7 +157,13 @@ table thead {
 
 #table-service,
 #table-list,
-#table-popular {
+#table-popular,
+#table-popular_wrapper,
+#table-list_wrapper,
+#table-service_wrapper,
+#table-popular_wrapper th,
+#table-list_wrapper th,
+#table-service_wrapper th {
   color: #fff;
 }
 
