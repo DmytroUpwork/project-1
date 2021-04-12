@@ -1,7 +1,9 @@
 $(document).ready(function() {
+
+    // $("select").addClass("selectpicker");
      
    
-
+    // Таблицы левого блока 
     $('#table-service').DataTable({
         "language": {
             "url": "plug-ins/1.10.24/russian.json"
@@ -30,8 +32,7 @@ $(document).ready(function() {
     }); 
 
 
-
-
+    // Таблицы правого блока
     $('#table-statistic').DataTable({
         "language": {
             "url": "plug-ins/1.10.24/russian.json"

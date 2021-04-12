@@ -88,6 +88,12 @@ body {
   margin-right: 24px;
 }
 
+.navbar-light .navbar-toggler {
+  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid #039BE6;
+}
+
 /* Стили контейнеров и таблиц */
 ._cont-nav {
   padding-bottom: 50px;
@@ -112,6 +118,13 @@ body {
   position: absolute;
   top: -27px;
   left: -213px;
+}
+
+#table-service_info,
+#table-list_info,
+#table-popular_info {
+  position: absolute;
+  min-width: 240px;
 }
 
 ._cont-table__tabs > .nav {

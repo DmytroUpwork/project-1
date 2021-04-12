@@ -6,7 +6,7 @@
   #table-popular_filter,
   #table-service_filter,
   #table-list_filter {
-    left: -145px;
+    left: calc(-139px + -75 * ((100vw - 992px) / (1440 - 992)));
   }
 }
 
