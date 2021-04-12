@@ -273,22 +273,27 @@ td.t-number {
   position: relative;
 }
 
-._btn-accordion:before {
-  content: "";
+._btn-accordion > span {
   position: absolute;
   border-radius: 50%;
-  right: 0;
-  top: 13px;
+  right: 0px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0px auto auto;
   width: 20px;
   height: 20px;
   background: #0887BD
 }
 
-._btn-accordion:after {
+._btn-accordion > span:after {
   content: "";
   position: absolute;
-  right: 4.74px;
-  top: 20px;
+  right: 0;
+  top: 5px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   width: 10px;
   height: 10px;
   border: 1px solid #fff;
@@ -298,8 +303,12 @@ td.t-number {
   transition: .3s;
 }
 
-.collapsed._btn-accordion:after {
-  top: 15px;
+.collapsed._btn-accordion > span:after {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 6px;
+  margin: auto;
   transform: rotate(45deg);
 }
 
