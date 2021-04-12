@@ -39,6 +39,26 @@
   #table-list_filter {
     left: 26px;
   }
+  .form-feedback {
+    padding: 26px 0 36px;
+    margin-right: 0;
+    margin-top: 0 ;
+  }
+  .accordion > .card .card-body {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  ._btn-accordion {
+    font-size: 17px;
+    padding: 0;
+  }
+  .card-body {
+    padding: 0;
+  }
+  ._c-a__questions-all {
+    padding: 21px 10px;
+  }
+  
 }
 
 @media (min-width: 992px) {
