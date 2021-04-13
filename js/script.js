@@ -1,12 +1,10 @@
 $(document).ready(function() {
-
-    // $("select").addClass("selectpicker");
      
    
     // Таблицы левого блока 
     $('#table-service').DataTable({
         "language": {
-            "url": "plug-ins/1.10.24/russian.json"
+            "url": "/plug-ins/1.10.24/russian.json"
         },
         "scrollY":        "410px",
         "scrollCollapse": true,
@@ -15,7 +13,7 @@ $(document).ready(function() {
 
     $('#table-list').DataTable({
         "language": {
-            "url": "plug-ins/1.10.24/russian.json"
+            "url": "/plug-ins/1.10.24/russian.json"
         },
         "scrollY":        "410px",
         "scrollCollapse": true,
@@ -24,7 +22,7 @@ $(document).ready(function() {
 
     $('#table-popular').DataTable({
         "language": {
-            "url": "plug-ins/1.10.24/russian.json"
+            "url": "/plug-ins/1.10.24/russian.json"
         },
         "scrollY":        "410px",
         "scrollCollapse": true,
@@ -35,13 +33,13 @@ $(document).ready(function() {
     // Таблицы правого блока
     $('#table-statistic').DataTable({
         "language": {
-            "url": "plug-ins/1.10.24/russian.json"
+            "url": "/plug-ins/1.10.24/russian.json"
         }
     }); 
 
     $('#available-rooms').DataTable({
         "language": {
-            "url": "plug-ins/1.10.24/russian.json"
+            "url": "/plug-ins/1.10.24/russian.json"
         }
     }); 
 
