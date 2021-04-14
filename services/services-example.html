@@ -435,7 +435,7 @@
                     <span class="link">
                       Комментировать
                     </span>
-                    <span class="link">
+                    <span class="link" data-del="delete">
                       Удалить
                     </span>
                   </div>
@@ -502,7 +502,7 @@
                     <span class="link">
                       Комментировать
                     </span>
-                    <span class="link">
+                    <span class="link" data-del="delete">
                       Удалить
                     </span>
                   </div>
@@ -587,10 +587,55 @@
                     </div>
                   </div>
                   <div class="review_manage">
-                    <span class="link">
+
+
+
+
+
+
+                    <script>
+                      window.onload = function(){
+                        document.getElementById('add').onclick = startKomm;
+                      }
+                      function startKomm(){
+                        var text = document.getElementById('txt').value;
+                        var komm = document.createElement('p');
+                        var newText = document.createTextNode(text);
+                        komm.appendChild(newText);
+                        document.getElementById('komments').appendChild(komm);
+                        return true;
+                      }
+                    </script>
+
+
+
+
+                    <form id="form_addComment" class="hide">
+                       <label>Ваши комментарии</label>
+                       <br/>
+                       <textarea rows="10" cols="50" id="txt"></textarea>
+                       <br/>
+                       <input type="button" value="Добавить комментарий" id="add"/>
+                    </form>
+                    <div id="komments"></div>
+                      
+
+
+
+
+                    <span class="link comment_add" id="link_comment_add">
                       Комментировать
                     </span>
-                    <span class="link">
+
+
+
+
+
+
+
+
+
+                    <span class="link" data-del="delete">
                       Удалить
                     </span>
                   </div>

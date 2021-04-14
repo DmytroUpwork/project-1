@@ -2102,6 +2102,41 @@ function show_addreviewform(whatis) {
 
 
 
+function removeElem(delElem, attribute, attributeName) {
+    //проверка на наличие всех аргументов.
+      if (!(delElem && attribute && attributeName)) return;
+    //возвращаем функцию, которая будет иметь доступ к аргументам, и при этом будет в себе хранить объект события.
+      return function(e) {
+     //Узнаем на каком элементе был произведен клик.
+        let target = e.target;
+    //Делаем проверку на наличие атрибута "data-del", и проверяем на наличие параметра "delete".
+        if (!(target.hasAttribute(attribute) ?
+            (target.getAttribute(attribute) === attributeName ? true : false) : false)) return;
+        let elem = target;
+    //После мы производим поиск элемента, который нужно удалить. Поиск идет снизу вверх. За счет того, что кнопки находяться внутри "card", то мы точно удалить нужный нам "card"(сорри за тавтологию).
+        while (target != this) {
+          if (target.classList.contains(delElem)) {
+            target.remove();
+            return;
+          }
+          target = target.parentNode;
+        }
+        return;
+      };
+    }
+    
+    
+    document.addEventListener("click", removeElem("review_block", "data-del", "delete"));
+
+
+
+
+    document.getElementById("link_comment_add").addEventListener("click", show_addreview);
+    function show_addreview() {
+        document.getElementById("form_addComment").className = '';
+    }
+
+
 
 
 
@@ -2548,21 +2583,21 @@ function show_addreviewform(whatis) {
 //   if (req) {
 //     var send_button = document.getElementById('send_comment_button');
 //     send_button.disabled = true;
-//     // var id = document.getElementById('review_comment_id').value;
-//     // var password = document.getElementById('review_comment_password').value;
+//     var id = document.getElementById('review_comment_id').value;
+//     var password = document.getElementById('review_comment_password').value;
 //     var comment_text = document.getElementById('review_comment_text');
 //     var switch_type = nodeById('switch_type');
 //     var type = switch_type.checked ? 1 : 0;
 
-//     // var ajax_timer = setTimeout(function() {
-//     //   req.abort();
-//     //   req.onreadystatechange = function() {
-//     //     return true;
-//     //   };
-//     //   set_status('comment', 'Отсутствует связь с сервером', 'error.png');
-//     //   send_button.disabled = false;
-//     // }, 25000);
-//     // set_status('comment', 'Сохранение комментария...', 'ajax.gif', true);
+//     var ajax_timer = setTimeout(function() {
+//       req.abort();
+//       req.onreadystatechange = function() {
+//         return true;
+//       };
+//       set_status('comment', 'Отсутствует связь с сервером', 'error.png');
+//       send_button.disabled = false;
+//     }, 25000);
+//     set_status('comment', 'Сохранение комментария...', 'ajax.gif', true);
 
 //     req.onreadystatechange = function() {
 //       if (req.readyState != 4) return;
