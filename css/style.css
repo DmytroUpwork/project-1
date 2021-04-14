@@ -619,6 +619,15 @@ div.dataTables_scrollHead table.dataTable {
 }
 
 
+
+
+#review_form {
+  position: absolute; 
+  height: auto; 
+  left: -9999px;
+}
+
+
 ._text-input {
   font-size: 14px;
   line-height: 17px;
@@ -628,13 +637,21 @@ div.dataTables_scrollHead table.dataTable {
 }
 
 .radiotable { 
-  padding: 0 0 23px 22px;
+  padding: 0 22px 23px 22px;
 }
 .radiotable caption { 
   padding: 0 20px 0 0;
   font-size: 18px;
   line-height: 22px;
   color: #000000;
+}
+
+#tsiddesc {
+  display: none;
+}
+
+#tsiddesc td {
+  width: 1px;
 }
 /* Стили radio в форме подачи отзывов  */
 .form_radio_btn {
@@ -684,11 +701,6 @@ div.dataTables_scrollHead table.dataTable {
   background-repeat: no-repeat;
   background-position: center;
 }
- 
-/* Hover */
-/* .form_radio_btn label:hover {
-	color: #666;
-} */
 
 ._icon-like {
   width: 20px;

@@ -2031,22 +2031,15 @@ var show_ar_form = false;
 //   return false;
 // }
 
-// function change_reviewtype(num) {
-//   var tsidreq = document.getElementById('tsidreq');
-//   var tsiddesc = document.getElementById('tsiddesc');
-//   var tsidposdesc = document.getElementById('tsidposdesc');
-//   var reviewtsid = document.getElementById('reviewtsid');
-//   if (num == 2) {
-//     removeClass(tsidreq, 'hide');
-//     tsiddesc.style.display = document.all && !document.querySelector ? 'block' : 'table-row';//ie7fix
-//     //tsidposdesc.style.display = 'none';
-//     if (reviewtsid.value == '') setFocus(reviewtsid);
-//   } else {
-//     addClass(tsidreq, 'hide');
-//     tsiddesc.style.display = 'none';
-//     //tsidposdesc.style.display = document.all && !document.querySelector ? 'block' : 'table-row';//ie7fix
-//   }
-// }
+function change_reviewtype(num) {
+  var tsiddesc = document.getElementById('tsiddesc');
+  if (num == 2) {
+    tsiddesc.style.display = document.all && !document.querySelector ? 'block' : 'table-row';//ie7fix
+  } else {
+    tsiddesc.style.display = 'none';
+    //tsidposdesc.style.display = document.all && !document.querySelector ? 'block' : 'table-row';//ie7fix
+  }
+}
 
 
 
