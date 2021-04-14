@@ -40,6 +40,10 @@ body {
   text-decoration: none;
 }
 
+.btn:hover {
+  color: #fff;
+}
+
 /* Стили svg */
 .icon { 
   width: 28px; 
@@ -334,13 +338,21 @@ td.t-number {
   transform: rotate(45deg);
 }
 
-._c-a__questions-all {
+._c-a__info {
   background: #0887BD;
   color: #fff;
   text-align: center;
   margin: 0 23px;
   padding: 21px 39px;
   font-size: 18px;
+}
+
+._c-a__info span {
+  color: #FFE15A;
+}
+
+._info_services {
+  padding: 13px 118px;
 }
 
 ._info-connect {
@@ -379,19 +391,19 @@ td.t-number {
   padding-bottom: 27px;
 }
 
-.form-feedback ._input-name {
+._input-name {
   background-image: url("../img/user-form.png");   
   background-repeat: no-repeat; 
   background-position: 98% 46%;
 }
 
-.form-feedback ._input-email {
+._input-email {
   background-image: url("../img/email-form.png");   
   background-repeat: no-repeat; 
   background-position: 98% 46%;
 }
 
-.form-feedback .form-control {
+.form-control {
   border-radius: 0;
 }
 
@@ -399,7 +411,7 @@ td.t-number {
   padding-bottom: 20px;
 }
 
-.form-feedback ._btn-form-feedback {
+._btn-form {
   background: #000000;
   color: #fff;
   border-radius: 0;
@@ -501,6 +513,76 @@ div.dataTables_scrollHead table.dataTable {
   padding-right: 13px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* Стили отзывов и о продукте  */
+.title-rewiews {
+  background: #0887BD;
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.review_add {
+  padding: 15px;
+}
+
+.review_add .review_add__btn {
+  cursor: pointer;
+
+}
+
+.review_add .review_add__btn .review_addicon {
+  background: rgba(3, 155, 230, 0.57);
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 6px;
+  transition: .3s;
+}
+
+.review_add .review_add__btn .review_addicon.bulletup {
+  transform: rotate(45deg);
+}
+
+.review_add .review_add__btn .review_addicon:before,
+.review_add .review_add__btn .review_addicon:after {
+  content: "";
+  background: #fff;
+  width: 2px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.review_add .review_add__btn .review_addicon:before {
+  transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
 /* Стили полосы прокрутки  */
 ::-webkit-scrollbar-button {
   background-image:url('');
@@ -534,4 +616,162 @@ div.dataTables_scrollHead table.dataTable {
   
 ::-webkit-scrollbar{
   width: 4px;
+}
+
+
+._text-input {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  display: flex;
+}
+
+.radiotable { 
+  padding: 0 0 23px 22px;
+}
+.radiotable caption { 
+  padding: 0 20px 0 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+/* Стили radio в форме подачи отзывов  */
+.form_radio_btn {
+	display: inline-block;
+	margin-right: 10px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.radio-pos-start {
+  color: #039BE6;
+}
+
+.radio-neu-start {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.radio-neg-start {
+  color: #FF4B55;
+}
+
+
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: flex;
+}
+.form_radio_btn label span {
+	display: inline-block;
+	cursor: pointer;
+  margin-right: 8px;
+	line-height: 34px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+  height: 20px;
+  width: 20px;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label span {
+  background-color: #fff;
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+  background-image: url("../img/checkbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ 
+/* Hover */
+/* .form_radio_btn label:hover {
+	color: #666;
+} */
+
+._icon-like {
+  width: 20px;
+  margin: -6px 20px 0px 11px;
+}
+
+._icon-like use {
+  fill: rgba(0, 0, 0, 0.5);
+}
+._icon-like__positive use {
+  fill: #0887BD;
+}
+._icon-like__negative use {
+  fill: #FF4B55;
+}
+._icon-like__negative {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#pagination {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 4px;
+  padding: 1px 2px 4px 2px;
+  border-top: 1px solid #AEAEAE;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: #DADADA;
+  background-image: -webkit-linear-gradient(top, #DBDBDB, #E2E2E2);
+  background-image:    -moz-linear-gradient(top, #DBDBDB, #E2E2E2);
+  background-image:     -ms-linear-gradient(top, #DBDBDB, #E2E2E2);
+  background-image:      -o-linear-gradient(top, #DBDBDB, #E2E2E2);
+  background-image:         linear-gradient(top, #DBDBDB, #E2E2E2);
+}
+#pagination a, #pagination i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  color: #7D7D7D;
+  text-align: center;
+  font-size: 10px;
+  padding: 3px 0 2px 0;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+       -o-user-select:none;
+          user-select:none;
+}
+
+#pagination a {
+  margin: 0 2px 0 2px;
+  border-radius: 4px;
+  border: 1px solid #E3E3E3;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 0 #FFF, 0 1px 2px #666;
+  text-shadow: 0 1px 1px #FFF;
+  background-color: #E6E6E6;
+  background-image: -webkit-linear-gradient(top, #F3F3F3, #D7D7D7);
+  background-image:    -moz-linear-gradient(top, #F3F3F3, #D7D7D7);
+  background-image:     -ms-linear-gradient(top, #F3F3F3, #D7D7D7);
+  background-image:      -o-linear-gradient(top, #F3F3F3, #D7D7D7);
+  background-image:         linear-gradient(top, #F3F3F3, #D7D7D7);
+}
+#pagination i {
+  margin: 0 3px 0 3px;
+}
+#pagination a.current {
+  border: 1px solid #E9E9E9;
+  box-shadow: 0 1px 1px #999;
+  background-color: #DFDFDF;
+  background-image: -webkit-linear-gradient(top, #D0D0D0, #EBEBEB);
+  background-image:    -moz-linear-gradient(top, #D0D0D0, #EBEBEB);
+  background-image:     -ms-linear-gradient(top, #D0D0D0, #EBEBEB);
+  background-image:      -o-linear-gradient(top, #D0D0D0, #EBEBEB);
+  background-image:         linear-gradient(top, #D0D0D0, #EBEBEB);
 }

@@ -28,6 +28,9 @@
   #table-list_filter {
     left: -330px;
   }
+  ._info_services {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -55,10 +58,10 @@
   .card-body {
     padding: 0;
   }
-  ._c-a__questions-all {
+  ._c-a__info,
+  ._info_services {
     padding: 21px 10px;
   }
-  
 }
 
 @media (min-width: 992px) {
