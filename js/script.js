@@ -4,7 +4,7 @@ $(document).ready(function() {
     // Таблицы левого блока 
     $('#table-service').DataTable({
         "language": {
-            "url": "/plug-ins/1.10.24/russian.json"
+            "url": "./plug-ins/1.10.24/russian.json"
         },
         "scrollY":        "410px",
         "scrollCollapse": true,
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     $('#table-list').DataTable({
         "language": {
-            "url": "/plug-ins/1.10.24/russian.json"
+            "url": "./plug-ins/1.10.24/russian.json"
         },
         "scrollY":        "410px",
         "scrollCollapse": true,
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     $('#table-popular').DataTable({
         "language": {
-            "url": "/plug-ins/1.10.24/russian.json"
+            "url": "./plug-ins/1.10.24/russian.json"
         },
         "scrollY":        "410px",
         "scrollCollapse": true,
@@ -33,13 +33,13 @@ $(document).ready(function() {
     // Таблицы правого блока
     $('#table-statistic').DataTable({
         "language": {
-            "url": "/plug-ins/1.10.24/russian.json"
+            "url": "./plug-ins/1.10.24/russian.json"
         }
     }); 
 
     $('#available-rooms').DataTable({
         "language": {
-            "url": "/plug-ins/1.10.24/russian.json"
+            "url": "./plug-ins/1.10.24/russian.json"
         }
     }); 
 
@@ -124,32 +124,54 @@ function show_addreviewform(whatis) {
 
 
 function removeElem(delElem, attribute, attributeName) {
-    //проверка на наличие всех аргументов.
-      if (!(delElem && attribute && attributeName)) return;
-    //возвращаем функцию, которая будет иметь доступ к аргументам, и при этом будет в себе хранить объект события.
-      return function(e) {
-     //Узнаем на каком элементе был произведен клик.
-        let target = e.target;
-    //Делаем проверку на наличие атрибута "data-del", и проверяем на наличие параметра "delete".
-        if (!(target.hasAttribute(attribute) ?
-            (target.getAttribute(attribute) === attributeName ? true : false) : false)) return;
-        let elem = target;
-    //После мы производим поиск элемента, который нужно удалить. Поиск идет снизу вверх. За счет того, что кнопки находяться внутри "card", то мы точно удалить нужный нам "card"(сорри за тавтологию).
-        while (target != this) {
-          if (target.classList.contains(delElem)) {
-            target.remove();
-            return;
-          }
-          target = target.parentNode;
-        }
+  if (!(delElem && attribute && attributeName)) return;
+  return function(e) {
+    let target = e.target;
+    if (!(target.hasAttribute(attribute) ?
+        (target.getAttribute(attribute) === attributeName ? true : false) : false)) return;
+    let elem = target;
+    while (target != this) {
+      if (target.classList.contains(delElem)) {
+        target.remove();
         return;
-      };
+      }
+      target = target.parentNode;
     }
+    return;
+  };
+}
+    
+document.addEventListener("click", removeElem("review_block", "data-del", "delete"));
+
+
+
+
+
+
+document.onclick = function(event) { var target = event.target;  var id = target.getAttribute('data-toggle-id');
+  if (!id) return;
+  var elem = document.getElementById(id);
+  elem.hidden = !elem.hidden;
+};
     
     
-    document.addEventListener("click", removeElem("review_block", "data-del", "delete"));
-    
-    document.getElementById("link_comment_add").addEventListener("click", show_addreview);
-    function show_addreview() {
-        document.getElementById("form_addComment").className = '';
-    }
+
+    // var linkAddComment = document.getElementsByClassName("comment_add");
+
+    // [].forEach.call(linkAddComment,function(el){
+    //   el.addEventListener('click', function (e) {
+    //     document.querySelectorAll("form_addComment").className = '';
+    //   })
+    // });
+
+    // window.onload = function(){
+    //   document.getElementById('addComment3').onclick = startKomm;
+    // }
+    // function startKomm(){
+    //   var text = document.getElementById('txt').value;
+    //   var komm = document.createElement('p');
+    //   var newText = document.createTextNode(text);
+    //   komm.appendChild(newText);
+    //   document.getElementById('komments').appendChild(komm);
+    //   return true;
+    // }

@@ -432,7 +432,15 @@
                     </div>
                   </div>
                   <div class="review_manage">
-                    <span class="link">
+                    <form id="form_addComment1" class="form_addComment" hidden>
+                      <label>Ваши комментарии</label>
+                      <br/>
+                      <textarea rows="10" cols="50" id="textMessage1"></textarea>
+                      <br/>
+                      <input type="button" value="Добавить комментарий" id="addComment1"/>
+                    </form>
+                    <div id="komments1"></div>
+                    <span class="link comment_add" data-toggle-id="form_addComment1">
                       Комментировать
                     </span>
                     <span class="link" data-del="delete">
@@ -499,7 +507,15 @@
                     </div>
                   </div>
                   <div class="review_manage">
-                    <span class="link">
+                    <form id="form_addComment2" class="form_addComment" hidden>
+                      <label>Ваши комментарии</label>
+                      <br/>
+                      <textarea rows="10" cols="50" id="textMessage2"></textarea>
+                      <br/>
+                      <input type="button" value="Добавить комментарий" id="addComment2"/>
+                    </form>
+                    <div id="komments2"></div>
+                    <span class="link comment_add" data-toggle-id="form_addComment2">
                       Комментировать
                     </span>
                     <span class="link" data-del="delete">
@@ -566,75 +582,24 @@
                         expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
                       </div>
                     </div>
-
-
-
-
-
-
-
                   </div>
-
-
-
-
-
-
-
                   <div class="hide">
                     <div>
                       <span class="hide">0</span>
                     </div>
                   </div>
                   <div class="review_manage">
-
-
-
-
-
-
-                    <script>
-                      window.onload = function(){
-                        document.getElementById('add').onclick = startKomm;
-                      }
-                      function startKomm(){
-                        var text = document.getElementById('txt').value;
-                        var komm = document.createElement('p');
-                        var newText = document.createTextNode(text);
-                        komm.appendChild(newText);
-                        document.getElementById('komments').appendChild(komm);
-                        return true;
-                      }
-                    </script>
-
-
-
-
-                    <form id="form_addComment" class="hide">
-                       <label>Ваши комментарии</label>
-                       <br/>
-                       <textarea rows="10" cols="50" id="txt"></textarea>
-                       <br/>
-                       <input type="button" value="Добавить комментарий" id="add"/>
+                    <form id="form_addComment3" class="form_addComment" hidden>
+                      <label>Ваши комментарии</label>
+                      <br/>
+                      <textarea rows="10" cols="50" id="textMessage3"></textarea>
+                      <br/>
+                      <input type="button" value="Добавить комментарий" id="addComment3"/>
                     </form>
-                    <div id="komments"></div>
-                      
-
-
-
-
-                    <span class="link comment_add" id="link_comment_add">
+                    <div id="komments3"></div>
+                    <span class="link comment_add"  data-toggle-id="form_addComment3">
                       Комментировать
                     </span>
-
-
-
-
-
-
-
-
-
                     <span class="link" data-del="delete">
                       Удалить
                     </span>
@@ -644,17 +609,6 @@
                   <div class="review_bottom"></div>
                 </div>
               </div>
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
             
