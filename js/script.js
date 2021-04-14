@@ -2052,28 +2052,16 @@ function switch_arform(obj, position, is_start) {
   if (show_ar_form) {
     if (is_start) obj.style.position = 'static';
 
-    position += 35;
+    position += 130;
     if (position < ar_form_height) {
       obj.style.height = position + 'px';
     } else {
       position = ar_form_height;
       obj.style.height = 'auto';
-
-    //   var reviewname = document.getElementById('reviewname');
-    //   if (reviewname.value == '') {
-    //     setFocus(reviewname);
-    //   } else {
-    //     var reviewemail = document.getElementById('reviewemail');
-    //     if (reviewemail.value == '') {
-    //       setFocus(reviewemail);
-    //     } else {
-    //       setFocus(document.getElementById('reviewtext'));
-    //     }
-    //   }
       return;
     }
   } else {
-    position -= 35;
+    position -= 130;
     if (position > 0) {
       obj.style.height = position + 'px';
     } else {
@@ -2560,21 +2548,21 @@ function show_addreviewform(whatis) {
 //   if (req) {
 //     var send_button = document.getElementById('send_comment_button');
 //     send_button.disabled = true;
-//     var id = document.getElementById('review_comment_id').value;
-//     var password = document.getElementById('review_comment_password').value;
+//     // var id = document.getElementById('review_comment_id').value;
+//     // var password = document.getElementById('review_comment_password').value;
 //     var comment_text = document.getElementById('review_comment_text');
 //     var switch_type = nodeById('switch_type');
 //     var type = switch_type.checked ? 1 : 0;
 
-//     var ajax_timer = setTimeout(function() {
-//       req.abort();
-//       req.onreadystatechange = function() {
-//         return true;
-//       };
-//       set_status('comment', 'Отсутствует связь с сервером', 'error.png');
-//       send_button.disabled = false;
-//     }, 25000);
-//     set_status('comment', 'Сохранение комментария...', 'ajax.gif', true);
+//     // var ajax_timer = setTimeout(function() {
+//     //   req.abort();
+//     //   req.onreadystatechange = function() {
+//     //     return true;
+//     //   };
+//     //   set_status('comment', 'Отсутствует связь с сервером', 'error.png');
+//     //   send_button.disabled = false;
+//     // }, 25000);
+//     // set_status('comment', 'Сохранение комментария...', 'ajax.gif', true);
 
 //     req.onreadystatechange = function() {
 //       if (req.readyState != 4) return;

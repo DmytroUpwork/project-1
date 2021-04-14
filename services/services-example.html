@@ -295,37 +295,18 @@
             <div class="title-rewiews">
               Отзывы
             </div>
-
             <div class="review_add">
-
               <div class="review_add__btn d-flex" onclick="show_addreviewform()">
                 <span id="ar_bullet" class="review_addicon"></span>
                 <span class="link dashlink">Добавить отзыв</span>
               </div>
-              
-                
-              
             </div>
-
-
-
-
-
             <div id="pre_review_form">
               <div id="review_form">
-
-
-
-
                 <form class="form-review">
-
-                  
-
-
                   <div class="col col-md-6 pb-3 _col-input_name">
                     <input type="text" class="form-control _input-name" placeholder="Имя">
                   </div>
-
                   <div class="row m-0">
                     <div class="col-12 col-md-6 pb-3 _col-input_name">
                       <input type="email" class="form-control _input-email" id="FormControlInputEmail" placeholder="E-mail">
@@ -334,11 +315,9 @@
                       На E-mail придет письмо с данными для подтвержения и управления отзывом
                     </div>
                   </div>
-
                   <div class="col col-md-6 pb-3">
                     <textarea class="form-control" id="TextareaReview" rows="3" placeholder="Отзыв"></textarea>
                   </div>
-
                   <div class="row m-0">
                     <div class="col-12 col-md-6 pb-3 _col-input_name">
                       <input type="text" class="form-control" placeholder="Номер обмена">
@@ -347,8 +326,6 @@
                       Пожалуйста, укажите номер обмена или заявки
                     </div>
                   </div>
-
-
                   <table class="radiotable d-flex">
                     <caption>Тип отзыва:</caption>
                     <tbody>
@@ -358,7 +335,7 @@
                           <label for="rvtype_1">
                             <span></span>
                             Положительный
-                            <svg class="icon _icon-like _icon-like__positive">
+                            <svg class="icon _icon-like _icon-like__form _icon-like__positive">
                               <use xlink:href="../img/sprite-flags.svg#like"></use>
                             </svg>
                           </label>
@@ -368,7 +345,7 @@
                           <label for="rvtype_3">
                             <span></span>
                             Комментарий
-                            <svg class="icon _icon-like">
+                            <svg class="icon _icon-like _icon-like__form">
                               <use xlink:href="../img/sprite-flags.svg#like"></use>
                             </svg>
                           </label>
@@ -378,39 +355,232 @@
                           <label for="rvtype_2">
                             <span></span>
                             Претензия
-                            <svg class="icon _icon-like _icon-like__negative">
+                            <svg class="icon _icon-like _icon-like__form _icon-like__negative">
                               <use xlink:href="../img/sprite-flags.svg#like"></use>
                             </svg>
                           </label>
                         </td>
                       </tr>
-
-
                       <tr id="tsiddesc">
                         <td><p>Используйте этот тип отзыва только в случае, если вы до сих пор не получили средства от обменника CryptoHonest, а положенный срок уже прошел. После получения средств по обмену либо возврата претензия должна быть снята.</p><p>При этом обязательно укажите ваш <b>номер обмена</b> (заявки) – это поможет администратору CryptoHonest скорее решить проблему.</p><p>Если вам просто не понравилось обслуживание в CryptoHonest и вы хотите написать об этом – выберите тип отзыва <span class="link dashlink" onclick="document.getElementById('rvtype_3').click()">Комментарий</span>.</p></td>
                       </tr>
-
-
-
-
-
-
                     </tbody>
                   </table>
-
-
                   <div class="col col-md-6">
                     <button type="submit" class="btn _btn-form text-uppercase">Дать отзыв</button>
                   </div>
                 </form>
-
-
-
-
-
-
               </div>
             </div>
+
+
+
+            <div class="wrapper-review">
+
+
+
+              <div class="review_block">
+                <div class="review_header">
+                  <div class="review_info">
+                    <div class="user-name">
+                      <span class="review_type"></span>
+                      <span>Петя</span>
+                    </div>
+                    <div class="user-id">
+                      <svg class="icon _icon-like _icon-like__positive">
+                        <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                      </svg>
+                      178.92.202.*
+                    </div>
+                    <div class="inback">
+                      (13 апреля 2021 | 15:50)
+                    </div>
+                    <div class="review_icon">
+                      <svg class="icon _icon-like _icon-like__positive">
+                        <use xlink:href="../img/sprite-flags.svg#like"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_middle">
+                  <div class="review_text">
+                    Быстрый обмен, управились за 5минут!
+                  </div>
+                  <div class="review_comment_expand">
+                    <span>
+                      <span class="link">
+                        <span>Развернуть</span> 
+                        (<span>1</span>)
+                      </span>
+                      <span class="bulletdown"></span>
+                    </span>
+                  </div>
+                  <div class="hide">
+                    <div>
+                      <span class="hide">0</span>
+                    </div>
+                  </div>
+                  <div class="review_manage">
+                    <span class="link">
+                      Комментировать
+                    </span>
+                    <span class="link">
+                      Удалить
+                    </span>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="hide"></div>
+                  <div class="review_bottom"></div>
+                </div>
+              </div>
+
+
+              <div class="review_block">
+                <div class="review_header">
+                  <div class="review_info">
+                    <div class="user-name">
+                      <span class="review_type"></span>
+                      <span>Петя</span>
+                    </div>
+                    <div class="user-id">
+                      <svg class="icon _icon-like _icon-like__positive">
+                        <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                      </svg>
+                      178.92.202.*
+                    </div>
+                    <div class="inback">
+                      (13 апреля 2021 | 15:50)
+                    </div>
+                    <div class="review_icon">
+                      <svg class="icon _icon-like _icon-like__positive">
+                        <use xlink:href="../img/sprite-flags.svg#like"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_middle">
+                  <div class="review_text">
+                    Как обычно все отлично, мгновенный обмен перфекта на сбер. Спасибо за оперативность и хороший курс!
+                  </div>
+                  <div class="review_comment_expand">
+                    <span>
+                      <span class="link">
+                        <span>Развернуть</span> 
+                        (<span>1</span>)
+                      </span>
+                      <span class="bulletdown"></span>
+                    </span>
+                  </div>
+                  <div class="hide">
+                    <div>
+                      <span class="hide">0</span>
+                    </div>
+                  </div>
+                  <div class="review_manage">
+                    <span class="link">
+                      Комментировать
+                    </span>
+                    <span class="link">
+                      Удалить
+                    </span>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="hide"></div>
+                  <div class="review_bottom"></div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div id="review1066585" class="review_block_1">
+              <div class="review_header">
+                <table class="review_info">
+                  <tbody>
+                    <tr>
+                      <td width="4%">
+                        <span class="review_type_1"></span>
+                        <a name="1066585"></a>
+                      </td>
+                      <td width="12%" class="nospace">
+                        Сергей
+
+                      </td>
+                      <td width="4%">
+                        <img src="https://www.bestchange.ru/images/countries/ru.png" class="flagicon" title="Россия">
+                      </td>
+                      <td width="15%" class="inback nospace">85.113.157.*</td>
+                      <td width="65%" class="inback">(13 апреля 2021 | 23:37)</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="review_icon"></div>
+              </div>
+              <div class="review_middle">
+                <div class="review_text">Меняю крипту достаточно часто, но услугами этого обменника воспользовался впервые.
+                   И скажу честно, приятно удивлен! И скоростью обмена, и общительной поддержкой, и хорошим курсом. 
+                   Обычно на мелкие обмены курсы не самые выгодные, 
+                   а у этого обменника низкий порог, поэтому с небольшой суммой обмен получается выгодным. 
+                  Спасибо! Обязательно еще вернусь.
+                </div>
+                <div id="reviewcommentexpand1066585" class="review_comment_expand hide">
+                <span id="commentexpandlink1066585" onclick="show_comment_case(1066585)"><span class="link dashlink"><span id="commentexpandtext1066585">Развернуть</span> (<span id="commentexpandcount1066585">0</span>)</span><span id="vcbullet1066585" class="bulletdown"></span></span>
+                <noscript><span class="noscript">(необходим JavaScript)</span></noscript>
+              </div>
+              <div id="commentcase1066585" class="hide">
+                <div id="reviewcomments1066585">
+                  <span id="reviewclaimtype1066585" class="hide">0</span>
+                </div>
+              </div>
+            
+                <div class="review_manage" id="reviewmanage1066585"><span class="link dashlink" onclick="comment_review_menu(1066585, this, event)">Комментировать</span><span class="link dashlink" onclick="delete_review_menu(1066585, this, event)">Удалить</span> <noscript><span class="noscript">(необходим JavaScript)</span></noscript></div>
+                <div class="clear"></div>
+                <div id="reviewcomment1066585" class="hide"></div>
+                <div class="review_bottom"></div>
+              </div>
+            </div> -->
 
 
 

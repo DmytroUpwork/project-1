@@ -704,6 +704,9 @@ div.dataTables_scrollHead table.dataTable {
 
 ._icon-like {
   width: 20px;
+}
+
+._icon-like__form {
   margin: -6px 20px 0px 11px;
 }
 
@@ -729,8 +732,7 @@ div.dataTables_scrollHead table.dataTable {
 
 
 
-
-
+/* Стили пагинации  */
 #pagination {
   display: inline-block;
   vertical-align: middle;
@@ -786,4 +788,79 @@ div.dataTables_scrollHead table.dataTable {
   background-image:     -ms-linear-gradient(top, #D0D0D0, #EBEBEB);
   background-image:      -o-linear-gradient(top, #D0D0D0, #EBEBEB);
   background-image:         linear-gradient(top, #D0D0D0, #EBEBEB);
+}
+
+
+
+/* Стили блока отзывов  */
+.wrapper-review {
+  padding: 40px 15px 0;
+}
+
+.review_block {
+  background: #FFFFFF;
+  box-shadow: 4px 7px 30px rgba(3, 155, 230, 0.2);
+  border-radius: 4px;
+  padding: 8px 11px;
+  margin-bottom: 16px;
+}
+
+.review_header {
+  position: relative;
+}
+
+.review_info {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding-bottom: 9px;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.user-id {
+  padding-right: 118px;
+}
+
+.review_header .review_icon {
+  position: absolute;
+  right: 12px;
+}
+
+.review_type {
+  display: inline-block;
+  background: url("../img/user.jpg") no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.review_text {
+  position: relative;
+  z-index: 3;
+  padding: 12px 0;
+}
+
+.hide {
+  display: none;
+}
+
+.link {
+  color: #006ead;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.review_manage {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.review_manage span.link {
+  display: inline-block;
+  margin-left: 12px;
 }
