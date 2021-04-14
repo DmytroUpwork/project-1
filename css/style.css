@@ -864,3 +864,11 @@ div.dataTables_scrollHead table.dataTable {
   display: inline-block;
   margin-left: 12px;
 }
+
+.form_addComment,
+.form_addComment textarea {
+  width: 100%;
+}
+.form_addComment textarea {
+  min-height: 130px;
+}
