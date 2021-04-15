@@ -1,3 +1,4 @@
+$.noConflict();
 $(document).ready(function() {
      
     // Таблицы левого блока 
@@ -97,6 +98,9 @@ $(document).ready(function() {
 
 
 
+
+
+
 var show_ar_form = false;
 
 function change_reviewtype(num) {
@@ -107,7 +111,7 @@ function change_reviewtype(num) {
     tsiddesc.style.display = 'none';
     //tsidposdesc.style.display = document.all && !document.querySelector ? 'block' : 'table-row';//ie7fix
   }
-}
+};
 
 
 
