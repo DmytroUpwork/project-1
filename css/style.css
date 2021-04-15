@@ -338,6 +338,8 @@ td.t-number {
   transform: rotate(45deg);
 }
 
+
+/* Стили блока информации о сервисе над отзывами  */
 .info-services {
   display: flex;
   justify-content: space-between;
@@ -371,16 +373,9 @@ td.t-number {
   font-family: 'Montserrat-Light';
 }
 
-
-
-
-
-
-
 .info-table-wrapper {
   padding: 0 10px 40px;
 }
-
 
 .exch_info_table .exch_act {
   background-color: #039BE6;
@@ -388,23 +383,6 @@ td.t-number {
   color: #fff;
   padding: 2px 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Стили формы обратной связи  */
@@ -557,16 +535,6 @@ div.dataTables_scrollHead table.dataTable {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Стили отзывов и о продукте  */
 .title-rewiews {
   background: #0887BD;
@@ -617,15 +585,6 @@ div.dataTables_scrollHead table.dataTable {
   transform: rotate(90deg);
 }
 
-
-
-
-
-
-
-
-
-
 /* Стили полосы прокрутки  */
 ::-webkit-scrollbar-button {
   background-image:url('');
@@ -661,15 +620,12 @@ div.dataTables_scrollHead table.dataTable {
   width: 4px;
 }
 
-
-
-
+/* Форма подачи отзыва  */
 #review_form {
   position: absolute; 
   height: auto; 
   left: -9999px;
 }
-
 
 ._text-input {
   font-size: 14px;
@@ -682,6 +638,7 @@ div.dataTables_scrollHead table.dataTable {
 .radiotable { 
   padding: 0 22px 23px 22px;
 }
+
 .radiotable caption { 
   padding: 0 20px 0 0;
   font-size: 18px;
@@ -696,6 +653,8 @@ div.dataTables_scrollHead table.dataTable {
 #tsiddesc td {
   width: 1px;
 }
+
+
 /* Стили radio в форме подачи отзывов  */
 .form_radio_btn {
 	display: inline-block;
@@ -716,13 +675,14 @@ div.dataTables_scrollHead table.dataTable {
   color: #FF4B55;
 }
 
-
 .form_radio_btn input[type=radio] {
 	display: none;
 }
+
 .form_radio_btn label {
 	display: flex;
 }
+
 .form_radio_btn label span {
 	display: inline-block;
 	cursor: pointer;
@@ -756,85 +716,20 @@ div.dataTables_scrollHead table.dataTable {
 ._icon-like use {
   fill: rgba(0, 0, 0, 0.5);
 }
+
 ._icon-like__positive use {
   fill: #0887BD;
 }
+
 ._icon-like__negative use {
   fill: #FF4B55;
 }
+
 ._icon-like__negative {
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-
-
-
-
-
-
-
-
-
-/* Стили пагинации  */
-#pagination {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 4px;
-  padding: 1px 2px 4px 2px;
-  border-top: 1px solid #AEAEAE;
-  border-bottom: 1px solid #FFFFFF;
-  background-color: #DADADA;
-  background-image: -webkit-linear-gradient(top, #DBDBDB, #E2E2E2);
-  background-image:    -moz-linear-gradient(top, #DBDBDB, #E2E2E2);
-  background-image:     -ms-linear-gradient(top, #DBDBDB, #E2E2E2);
-  background-image:      -o-linear-gradient(top, #DBDBDB, #E2E2E2);
-  background-image:         linear-gradient(top, #DBDBDB, #E2E2E2);
-}
-#pagination a, #pagination i {
-  display: inline-block;
-  vertical-align: middle;
-  width: 22px;
-  color: #7D7D7D;
-  text-align: center;
-  font-size: 10px;
-  padding: 3px 0 2px 0;
-  -webkit-user-select:none;
-     -moz-user-select:none;
-      -ms-user-select:none;
-       -o-user-select:none;
-          user-select:none;
-}
-
-#pagination a {
-  margin: 0 2px 0 2px;
-  border-radius: 4px;
-  border: 1px solid #E3E3E3;
-  cursor: pointer;
-  box-shadow: inset 0 1px 0 0 #FFF, 0 1px 2px #666;
-  text-shadow: 0 1px 1px #FFF;
-  background-color: #E6E6E6;
-  background-image: -webkit-linear-gradient(top, #F3F3F3, #D7D7D7);
-  background-image:    -moz-linear-gradient(top, #F3F3F3, #D7D7D7);
-  background-image:     -ms-linear-gradient(top, #F3F3F3, #D7D7D7);
-  background-image:      -o-linear-gradient(top, #F3F3F3, #D7D7D7);
-  background-image:         linear-gradient(top, #F3F3F3, #D7D7D7);
-}
-#pagination i {
-  margin: 0 3px 0 3px;
-}
-#pagination a.current {
-  border: 1px solid #E9E9E9;
-  box-shadow: 0 1px 1px #999;
-  background-color: #DFDFDF;
-  background-image: -webkit-linear-gradient(top, #D0D0D0, #EBEBEB);
-  background-image:    -moz-linear-gradient(top, #D0D0D0, #EBEBEB);
-  background-image:     -ms-linear-gradient(top, #D0D0D0, #EBEBEB);
-  background-image:      -o-linear-gradient(top, #D0D0D0, #EBEBEB);
-  background-image:         linear-gradient(top, #D0D0D0, #EBEBEB);
-}
-
-
-
+/* Пагинационный блок с озывами  */
 /* Стили блока отзывов  */
 .wrapper-review {
   padding: 40px 15px 0;
@@ -930,4 +825,39 @@ div.dataTables_scrollHead table.dataTable {
 
 .form_addComment textarea {
   min-height: 130px;
+}
+
+#pagingBox {
+  padding-left: 0;
+}
+
+/* Стили пагинации  */
+#page_navigation {
+  margin: 53px 0;
+}
+
+#page_navigation a{
+	padding:3px 6px;
+	border: 1px solid #dee2e6;
+  background:#fff;
+	color: #6c757d;
+	text-decoration:none;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+}
+
+.active_page{
+	background:#337ab7 !important;
+	color:white !important;
+}
+
+.previous_link {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.next_link {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
 }

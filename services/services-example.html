@@ -306,20 +306,7 @@
                   </select>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
             <div class="info-table-wrapper">
               <table class="exch_info_table">
                 <tbody>
@@ -368,37 +355,6 @@
               </table>
             </div>
 
-            
-
-
-
-
-
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             <div class="title-rewiews">
               Отзывы
             </div>
@@ -480,385 +436,576 @@
               </div>
             </div>
 
-
-
+            <!-- Блок с отзывами  -->
             <div class="wrapper-review">
-
-
-
-              <div class="review_block">
-                <div class="review_header">
-                  <div class="review_info">
-                    <div class="user-name">
-                      <span class="review_type"></span>
-                      <span>Петя</span>
-                    </div>
-                    <div class="user-id">
-                      <svg class="icon _icon-like _icon-like__positive">
-                        <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
-                      </svg>
-                      178.92.202.*
-                    </div>
-                    <div class="inback">
-                      (13 апреля 2021 | 15:50)
-                    </div>
-                    <div class="review_icon">
-                      <svg class="icon _icon-like _icon-like__positive">
-                        <use xlink:href="../img/sprite-flags.svg#like"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="review_middle">
-                  <div class="review_text">
-                    Быстрый обмен, управились за 5минут!
-                  </div>
-                  <div class="review_comment_expand">
-                    <p>
-                      <a class="btn" data-toggle="collapse" href="#collapseComment1" role="button" aria-expanded="false" aria-controls="collapseComment">
-                        <span>
-                          <span class="link">
-                            <span>Развернуть</span> 
-                            (<span>1</span>)
-                          </span>
-                          <span class="bulletdown"></span>
-                        </span>
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseComment1">
-                      <div class="review_text">
-                        <div class="rev-text__header">
+              <div class="physicianList">
+                <input type='hidden' id='current_page' />
+                <input type='hidden' id='show_per_page' />
+                <ul id="pagingBox">
+                  <li>
+                    <div class="review_block">
+                      <div class="review_header">
+                        <div class="review_info">
                           <div class="user-name">
-                            <span class="review_type rev_type-admin"></span>
-                            <span>Администратор</span>
+                            <span class="review_type"></span>
+                            <span>Петя</span>
+                          </div>
+                          <div class="user-id">
+                            <svg class="icon _icon-like _icon-like__positive">
+                              <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                            </svg>
+                            178.92.202.*
                           </div>
                           <div class="inback">
                             (13 апреля 2021 | 15:50)
                           </div>
+                          <div class="review_icon">
+                            <svg class="icon _icon-like _icon-like__positive">
+                              <use xlink:href="../img/sprite-flags.svg#like"></use>
+                            </svg>
+                          </div>
                         </div>
-                        Здравствуйте, Лана!
-                        Спасибо Вам за обмен и отзыв!
-                        Меняйте смело!
+                      </div>
+                      <div class="review_middle">
+                        <div class="review_text">
+                          Быстрый обмен, управились за 5минут!
+                        </div>
+                        <div class="review_comment_expand">
+                          <p>
+                            <a class="btn" data-toggle="collapse" href="#collapseComment1" role="button" aria-expanded="false" aria-controls="collapseComment">
+                              <span>
+                                <span class="link">
+                                  <span>Развернуть</span> 
+                                  (<span>1</span>)
+                                </span>
+                                <span class="bulletdown"></span>
+                              </span>
+                            </a>
+                          </p>
+                          <div class="collapse" id="collapseComment1">
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-admin"></span>
+                                  <span>Администратор</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Здравствуйте, Лана!
+                              Спасибо Вам за обмен и отзыв!
+                              Меняйте смело!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hide">
+                          <div>
+                            <span class="hide">0</span>
+                          </div>
+                        </div>
+                        <div class="review_manage">
+                          <form id="form_addComment1" class="form_addComment" hidden>
+                            <label>Ваш комментарий</label>
+                            <br/>
+                            <textarea id="textMessage1"></textarea>
+                            <br/>
+                            <input type="button" value="Добавить комментарий" id="addComment1"/>
+                          </form>
+                          <div id="komments1"></div>
+                          <span class="link comment_add" data-addComment="form_addComment1">
+                            Комментировать
+                          </span>
+                          <span class="link" data-del="delete">
+                            Удалить
+                          </span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="hide"></div>
+                        <div class="review_bottom"></div>
                       </div>
                     </div>
-                  </div>
-                  <div class="hide">
-                    <div>
-                      <span class="hide">0</span>
-                    </div>
-                  </div>
-                  <div class="review_manage">
-                    <form id="form_addComment1" class="form_addComment" hidden>
-                      <label>Ваш комментарий</label>
-                      <br/>
-                      <textarea id="textMessage1"></textarea>
-                      <br/>
-                      <input type="button" value="Добавить комментарий" id="addComment1"/>
-                    </form>
-                    <div id="komments1"></div>
-                    <span class="link comment_add" data-addComment="form_addComment1">
-                      Комментировать
-                    </span>
-                    <span class="link" data-del="delete">
-                      Удалить
-                    </span>
-                  </div>
-                  <div class="clear"></div>
-                  <div class="hide"></div>
-                  <div class="review_bottom"></div>
-                </div>
-              </div>
-
-
-              <div class="review_block">
-                <div class="review_header">
-                  <div class="review_info">
-                    <div class="user-name">
-                      <span class="review_type"></span>
-                      <span>Петя</span>
-                    </div>
-                    <div class="user-id">
-                      <svg class="icon _icon-like">
-                        <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
-                      </svg>
-                      178.92.202.*
-                    </div>
-                    <div class="inback">
-                      (13 апреля 2021 | 15:50)
-                    </div>
-                    <div class="review_icon">
-                      <svg class="icon _icon-like _icon-like__negative">
-                        <use xlink:href="../img/sprite-flags.svg#like"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="review_middle">
-                  <div class="review_text">
-                    Добрый день! По этой заявке переведены день мошеннику с моего Qiwi кошелька. Есть ли возможность вернуть перевод?
-                  </div>
-                  <div class="review_comment_expand">
-                    <p>
-                      <a class="btn" data-toggle="collapse" href="#collapseComment2" role="button" aria-expanded="false" aria-controls="collapseComment">
-                        <span>
-                          <span class="link">
-                            <span>Развернуть</span> 
-                            (<span>1</span>)
-                          </span>
-                          <span class="bulletdown"></span>
-                        </span>
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseComment2">
-                      <div class="review_text">
-                        <div class="rev-text__header">
+                  </li>
+                  <li>
+                    <div class="review_block">
+                      <div class="review_header">
+                        <div class="review_info">
                           <div class="user-name">
-                            <span class="review_type rev_type-admin"></span>
-                            <span>Администратор</span>
+                            <span class="review_type"></span>
+                            <span>Петя</span>
+                          </div>
+                          <div class="user-id">
+                            <svg class="icon _icon-like">
+                              <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                            </svg>
+                            178.92.202.*
                           </div>
                           <div class="inback">
                             (13 апреля 2021 | 15:50)
                           </div>
+                          <div class="review_icon">
+                            <svg class="icon _icon-like _icon-like__negative">
+                              <use xlink:href="../img/sprite-flags.svg#like"></use>
+                            </svg>
+                          </div>
                         </div>
-                        Здравствуйте, Лана!
-                        Спасибо Вам за обмен и отзыв!
-                        Меняйте смело!
                       </div>
-                    </div>
-                  </div>
-                  <div class="hide">
-                    <div>
-                      <span class="hide">0</span>
-                    </div>
-                  </div>
-                  <div class="review_manage">
-                    <form id="form_addComment2" class="form_addComment" hidden>
-                      <label>Ваш комментарий</label>
-                      <br/>
-                      <textarea id="textMessage2"></textarea>
-                      <br/>
-                      <input type="button" value="Добавить комментарий" id="addComment2"/>
-                    </form>
-                    <div id="komments2"></div>
-                    <span class="link comment_add" data-addComment="form_addComment2">
-                      Комментировать
-                    </span>
-                    <span class="link" data-del="delete">
-                      Удалить
-                    </span>
-                  </div>
-                  <div class="clear"></div>
-                  <div class="hide"></div>
-                  <div class="review_bottom"></div>
-                </div>
-              </div>
-
-
-              <div class="review_block">
-                <div class="review_header">
-                  <div class="review_info">
-                    <div class="user-name">
-                      <span class="review_type"></span>
-                      <span>Лана</span>
-                    </div>
-                    <div class="user-id">
-                      <svg class="icon _icon-like">
-                        <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
-                      </svg>
-                      178.92.202.*
-                    </div>
-                    <div class="inback">
-                      (13 апреля 2021 | 15:50)
-                    </div>
-                    <div class="review_icon">
-                      <svg class="icon _icon-like _icon-like">
-                        <use xlink:href="../img/sprite-flags.svg#like"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="review_middle">
-                  <div class="review_text">
-                    Переводил деньги со Сбера в USDT.
-                    После списания денег с карты выскочила ошибка "Обмен отменен", прошло уже 24 часа. Ответ от поддержки 
-                    "Информацию по статусу перевода нам еще не предоставил процессинг ПС"
-                  </div>
-                  <div class="review_comment_expand">
-                    <p>
-                      <a class="btn" data-toggle="collapse" href="#collapseComment3" role="button" aria-expanded="false" aria-controls="collapseComment">
-                        <span>
-                          <span class="link">
-                            <span>Развернуть</span> 
-                            (<span>3</span>)
+                      <div class="review_middle">
+                        <div class="review_text">
+                          Добрый день! По этой заявке переведены день мошеннику с моего Qiwi кошелька. Есть ли возможность вернуть перевод?
+                        </div>
+                        <div class="review_comment_expand">
+                          <p>
+                            <a class="btn" data-toggle="collapse" href="#collapseComment2" role="button" aria-expanded="false" aria-controls="collapseComment">
+                              <span>
+                                <span class="link">
+                                  <span>Развернуть</span> 
+                                  (<span>1</span>)
+                                </span>
+                                <span class="bulletdown"></span>
+                              </span>
+                            </a>
+                          </p>
+                          <div class="collapse" id="collapseComment2">
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-admin"></span>
+                                  <span>Администратор</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Здравствуйте, Лана!
+                              Спасибо Вам за обмен и отзыв!
+                              Меняйте смело!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hide">
+                          <div>
+                            <span class="hide">0</span>
+                          </div>
+                        </div>
+                        <div class="review_manage">
+                          <form id="form_addComment2" class="form_addComment" hidden>
+                            <label>Ваш комментарий</label>
+                            <br/>
+                            <textarea id="textMessage2"></textarea>
+                            <br/>
+                            <input type="button" value="Добавить комментарий" id="addComment2"/>
+                          </form>
+                          <div id="komments2"></div>
+                          <span class="link comment_add" data-addComment="form_addComment2">
+                            Комментировать
                           </span>
-                          <span class="bulletdown"></span>
-                        </span>
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseComment3">
-                      <div class="review_text">
-                        <div class="rev-text__header">
-                          <div class="user-name">
-                            <span class="review_type rev_type-admin"></span>
-                            <span>Администратор</span>
-                          </div>
-                          <div class="inback">
-                            (13 апреля 2021 | 15:50)
-                          </div>
+                          <span class="link" data-del="delete">
+                            Удалить
+                          </span>
                         </div>
-                        Здравствуйте, Лана!
-                        Спасибо Вам за обмен и отзыв!
-                        Меняйте смело!
+                        <div class="clear"></div>
+                        <div class="hide"></div>
+                        <div class="review_bottom"></div>
                       </div>
-                      <div class="review_text">
-                        <div class="rev-text__header">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="review_block">
+                      <div class="review_header">
+                        <div class="review_info">
                           <div class="user-name">
-                            <span class="review_type rev_type-user"></span>
+                            <span class="review_type"></span>
                             <span>Лана</span>
                           </div>
+                          <div class="user-id">
+                            <svg class="icon _icon-like">
+                              <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                            </svg>
+                            178.92.202.*
+                          </div>
                           <div class="inback">
                             (13 апреля 2021 | 15:50)
                           </div>
+                          <div class="review_icon">
+                            <svg class="icon _icon-like _icon-like">
+                              <use xlink:href="../img/sprite-flags.svg#like"></use>
+                            </svg>
+                          </div>
                         </div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius, quia neque ratione iusto ex modi veniam, 
-                        expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
                       </div>
-                      <div class="review_text">
-                        <div class="rev-text__header">
+                      <div class="review_middle">
+                        <div class="review_text">
+                          Переводил деньги со Сбера в USDT.
+                          После списания денег с карты выскочила ошибка "Обмен отменен", прошло уже 24 часа. Ответ от поддержки 
+                          "Информацию по статусу перевода нам еще не предоставил процессинг ПС"
+                        </div>
+                        <div class="review_comment_expand">
+                          <p>
+                            <a class="btn" data-toggle="collapse" href="#collapseComment3" role="button" aria-expanded="false" aria-controls="collapseComment">
+                              <span>
+                                <span class="link">
+                                  <span>Развернуть</span> 
+                                  (<span>3</span>)
+                                </span>
+                                <span class="bulletdown"></span>
+                              </span>
+                            </a>
+                          </p>
+                          <div class="collapse" id="collapseComment3">
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-admin"></span>
+                                  <span>Администратор</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Здравствуйте, Лана!
+                              Спасибо Вам за обмен и отзыв!
+                              Меняйте смело!
+                            </div>
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-user"></span>
+                                  <span>Лана</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius, quia neque ratione iusto ex modi veniam, 
+                              expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
+                            </div>
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-admin"></span>
+                                  <span>Администратор</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius, quia neque ratione iusto ex modi veniam, 
+                              expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hide">
+                          <div>
+                            <span class="hide">0</span>
+                          </div>
+                        </div>
+                        <div class="review_manage">
+                          <form id="form_addComment3" class="form_addComment" hidden>
+                            <label>Ваш комментарий</label>
+                            <br/>
+                            <textarea id="textMessage3"></textarea>
+                            <br/>
+                            <input type="button" value="Добавить комментарий" id="addComment3"/>
+                          </form>
+                          <div id="komments3"></div>
+                          <span class="link comment_add"  data-addComment="form_addComment3">
+                            Комментировать
+                          </span>
+                          <span class="link" data-del="delete">
+                            Удалить
+                          </span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="hide"></div>
+                        <div class="review_bottom"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="review_block">
+                      <div class="review_header">
+                        <div class="review_info">
                           <div class="user-name">
-                            <span class="review_type rev_type-admin"></span>
-                            <span>Администратор</span>
+                            <span class="review_type"></span>
+                            <span>Петя</span>
+                          </div>
+                          <div class="user-id">
+                            <svg class="icon _icon-like _icon-like__positive">
+                              <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                            </svg>
+                            178.92.202.*
                           </div>
                           <div class="inback">
                             (13 апреля 2021 | 15:50)
                           </div>
+                          <div class="review_icon">
+                            <svg class="icon _icon-like _icon-like__positive">
+                              <use xlink:href="../img/sprite-flags.svg#like"></use>
+                            </svg>
+                          </div>
                         </div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius, quia neque ratione iusto ex modi veniam, 
-                        expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
+                      </div>
+                      <div class="review_middle">
+                        <div class="review_text">
+                          Быстрый обмен, управились за 5минут!
+                        </div>
+                        <div class="review_comment_expand">
+                          <p>
+                            <a class="btn" data-toggle="collapse" href="#collapseComment4" role="button" aria-expanded="false" aria-controls="collapseComment">
+                              <span>
+                                <span class="link">
+                                  <span>Развернуть</span> 
+                                  (<span>1</span>)
+                                </span>
+                                <span class="bulletdown"></span>
+                              </span>
+                            </a>
+                          </p>
+                          <div class="collapse" id="collapseComment4">
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-admin"></span>
+                                  <span>Администратор</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Здравствуйте, Лана!
+                              Спасибо Вам за обмен и отзыв!
+                              Меняйте смело!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hide">
+                          <div>
+                            <span class="hide">0</span>
+                          </div>
+                        </div>
+                        <div class="review_manage">
+                          <form id="form_addComment4" class="form_addComment" hidden>
+                            <label>Ваш комментарий</label>
+                            <br/>
+                            <textarea id="textMessage4"></textarea>
+                            <br/>
+                            <input type="button" value="Добавить комментарий" id="addComment4"/>
+                          </form>
+                          <div id="komments4"></div>
+                          <span class="link comment_add" data-addComment="form_addComment4">
+                            Комментировать
+                          </span>
+                          <span class="link" data-del="delete">
+                            Удалить
+                          </span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="hide"></div>
+                        <div class="review_bottom"></div>
                       </div>
                     </div>
-                  </div>
-                  <div class="hide">
-                    <div>
-                      <span class="hide">0</span>
+                  </li>
+                  <li>
+                    <div class="review_block">
+                      <div class="review_header">
+                        <div class="review_info">
+                          <div class="user-name">
+                            <span class="review_type"></span>
+                            <span>Петя</span>
+                          </div>
+                          <div class="user-id">
+                            <svg class="icon _icon-like">
+                              <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                            </svg>
+                            178.92.202.*
+                          </div>
+                          <div class="inback">
+                            (13 апреля 2021 | 15:50)
+                          </div>
+                          <div class="review_icon">
+                            <svg class="icon _icon-like _icon-like__negative">
+                              <use xlink:href="../img/sprite-flags.svg#like"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review_middle">
+                        <div class="review_text">
+                          Добрый день! По этой заявке переведены день мошеннику с моего Qiwi кошелька. Есть ли возможность вернуть перевод?
+                        </div>
+                        <div class="review_comment_expand">
+                          <p>
+                            <a class="btn" data-toggle="collapse" href="#collapseComment5" role="button" aria-expanded="false" aria-controls="collapseComment">
+                              <span>
+                                <span class="link">
+                                  <span>Развернуть</span> 
+                                  (<span>1</span>)
+                                </span>
+                                <span class="bulletdown"></span>
+                              </span>
+                            </a>
+                          </p>
+                          <div class="collapse" id="collapseComment5">
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-admin"></span>
+                                  <span>Администратор</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Здравствуйте, Лана!
+                              Спасибо Вам за обмен и отзыв!
+                              Меняйте смело!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hide">
+                          <div>
+                            <span class="hide">0</span>
+                          </div>
+                        </div>
+                        <div class="review_manage">
+                          <form id="form_addComment5" class="form_addComment" hidden>
+                            <label>Ваш комментарий</label>
+                            <br/>
+                            <textarea id="textMessage5"></textarea>
+                            <br/>
+                            <input type="button" value="Добавить комментарий" id="addComment5"/>
+                          </form>
+                          <div id="komments5"></div>
+                          <span class="link comment_add" data-addComment="form_addComment5">
+                            Комментировать
+                          </span>
+                          <span class="link" data-del="delete">
+                            Удалить
+                          </span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="hide"></div>
+                        <div class="review_bottom"></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="review_manage">
-                    <form id="form_addComment3" class="form_addComment" hidden>
-                      <label>Ваш комментарий</label>
-                      <br/>
-                      <textarea id="textMessage3"></textarea>
-                      <br/>
-                      <input type="button" value="Добавить комментарий" id="addComment3"/>
-                    </form>
-                    <div id="komments3"></div>
-                    <span class="link comment_add"  data-addComment="form_addComment3">
-                      Комментировать
-                    </span>
-                    <span class="link" data-del="delete">
-                      Удалить
-                    </span>
-                  </div>
-                  <div class="clear"></div>
-                  <div class="hide"></div>
-                  <div class="review_bottom"></div>
-                </div>
+                  </li>
+                  <li>
+                    <div class="review_block">
+                      <div class="review_header">
+                        <div class="review_info">
+                          <div class="user-name">
+                            <span class="review_type"></span>
+                            <span>Лана</span>
+                          </div>
+                          <div class="user-id">
+                            <svg class="icon _icon-like">
+                              <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                            </svg>
+                            178.92.202.*
+                          </div>
+                          <div class="inback">
+                            (13 апреля 2021 | 15:50)
+                          </div>
+                          <div class="review_icon">
+                            <svg class="icon _icon-like _icon-like">
+                              <use xlink:href="../img/sprite-flags.svg#like"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review_middle">
+                        <div class="review_text">
+                          Переводил деньги со Сбера в USDT.
+                          После списания денег с карты выскочила ошибка "Обмен отменен", прошло уже 24 часа. Ответ от поддержки 
+                          "Информацию по статусу перевода нам еще не предоставил процессинг ПС"
+                        </div>
+                        <div class="review_comment_expand">
+                          <p>
+                            <a class="btn" data-toggle="collapse" href="#collapseComment6" role="button" aria-expanded="false" aria-controls="collapseComment">
+                              <span>
+                                <span class="link">
+                                  <span>Развернуть</span> 
+                                  (<span>3</span>)
+                                </span>
+                                <span class="bulletdown"></span>
+                              </span>
+                            </a>
+                          </p>
+                          <div class="collapse" id="collapseComment6">
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-admin"></span>
+                                  <span>Администратор</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Здравствуйте, Лана!
+                              Спасибо Вам за обмен и отзыв!
+                              Меняйте смело!
+                            </div>
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-user"></span>
+                                  <span>Лана</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius, quia neque ratione iusto ex modi veniam, 
+                              expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
+                            </div>
+                            <div class="review_text">
+                              <div class="rev-text__header">
+                                <div class="user-name">
+                                  <span class="review_type rev_type-admin"></span>
+                                  <span>Администратор</span>
+                                </div>
+                                <div class="inback">
+                                  (13 апреля 2021 | 15:50)
+                                </div>
+                              </div>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius, quia neque ratione iusto ex modi veniam, 
+                              expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hide">
+                          <div>
+                            <span class="hide">0</span>
+                          </div>
+                        </div>
+                        <div class="review_manage">
+                          <form id="form_addComment6" class="form_addComment" hidden>
+                            <label>Ваш комментарий</label>
+                            <br/>
+                            <textarea id="textMessage6"></textarea>
+                            <br/>
+                            <input type="button" value="Добавить комментарий" id="addComment6"/>
+                          </form>
+                          <div id="komments6"></div>
+                          <span class="link comment_add"  data-addComment="form_addComment6">
+                            Комментировать
+                          </span>
+                          <span class="link" data-del="delete">
+                            Удалить
+                          </span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="hide"></div>
+                        <div class="review_bottom"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
+              <div id='page_navigation'></div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-
-
-
-
-            
-
-
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <!-- <div id="pagination"></div> -->
-
-
-            <!-- <nav class="pagination" role="navigation" aria-label="Pagination">
-              <ul>
-                  <li class="pagination-first"><a href="" title="First page" aria-label="First page">First</a></li>
-                  <li class="pagination-prev"><a href="" rel="prev" title="Previous page" aria-label="Previous page">Prev</a></li>
-                  <li class="pagination-number pagination-current"><a href="services-example.html" title="Page 1, current page" aria-label="1, current page">1</a></li>
-                  <li class="pagination-number"><a href="services-example-2.html" title="Page 2">2</a></li>
-                  <li class="pagination-number"><a href="" title="Page 3">3</a></li>
-                  <li class="pagination-number"><a href="" title="Page 4">4</a></li>
-                  <li class="pagination-number"><a href="" title="Page 5">5</a></li>
-                  <li class="pagination-next"><a href="" rel="next" title="Next page" aria-label="Next page">Next</a></li>
-                  <li class="pagination-last"><a href="" title="Last page" aria-label="Last page">Last</a></li>
-              </ul>
-          </nav> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
           </div>
         </div>
       </div>
@@ -874,8 +1021,9 @@
     <script src="../libs/jquery-3.5.1/jquery-3.5.1.js"></script>
     <script src="../libs/dataTables/jquery.dataTables.min.js"></script>
     <script src="../libs/dataTables/dataTables.bootstrap4.min.js"></script>
-    <!-- Скрипт постраничной пагинации отзывов  -->
+    <!-- Скрипт пагинации отзывов  -->
     <script src="../js/pagination.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- Мой скрипт  -->
     <script src="../js/script.js"></script>
   </body>
