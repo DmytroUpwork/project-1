@@ -62,10 +62,43 @@
   ._info_services {
     padding: 21px 10px;
   }
+
+  .info-services {
+    display: block;
+  }
+
+  .i-s__info {
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  .i-s__info img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .i-s__link_wrapper {
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .i-s__link_wrapper {
+    font-size: 14px;
+    line-height: 56px;
+  }
 }
 
 @media (min-width: 992px) {
   .container, .container-lg, .container-md, .container-sm {
     max-width: 1440px;
+  }
+}
+
+
+@media only screen and (max-width: 1600px) and (min-width: 991.98px) {
+  .i-s__link_wrapper {
+    font-size: calc(11px + 8 * ((100vw - 992px) / (1440 - 992)));
   }
 }
