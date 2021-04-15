@@ -1,3 +1,4 @@
+
 jQuery(document).ready(function () {
     var show_per_page = 5; 
     var number_of_items = $('#pagingBox').children().size();
