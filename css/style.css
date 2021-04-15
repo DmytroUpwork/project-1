@@ -829,6 +829,7 @@ div.dataTables_scrollHead table.dataTable {
 
 #pagingBox {
   padding-left: 0;
+  list-style-type: none;
 }
 
 /* Стили пагинации  */
