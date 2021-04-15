@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../libs/bootstrap4.6.0/bootstrap.min.css"> 
     <!-- Стили DataTable  --> 
     <link rel="stylesheet" href="../libs/dataTables/bootstrap4.min.css">
+    <!-- Стили селекта  -->
+    <link rel="stylesheet" href="../libs/bootstrap-select-1.13.14/css/bootstrap-select.min.css">
     <!-- Мои стили  -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
@@ -280,18 +282,123 @@
         <div class="col-sm-12 col-md-12 col-lg-8">
           <div class="_cont-table__statistic">
 
-
-
-
-            <!-- <div class="_c-a__info _info_services">
-              <span><strong>BestChange.ru</strong></span> – это бесплатный онлайн-сервис для поиска пунктов обмена электронных денег, интернет-банкинга и денежных переводов. 
-              В BestChange зарегистрированы более 100 обменников, 
-              от каждого из которых сервис оперативно получает информацию о курсе валют и размере комиссий.
+            <div class="info-services">
+              <div class="i-s-col i-s__info">
+                <img src="../img/poster-1.jpg" alt="poster" width="166" height="127">
+                <div class="i-s__link">
+                  <h4>Сервис sms-activate</h4>
+                  <div class="i-s__link_wrapper">
+                    <a href="#!">Перейти на сайт сервиса</a>
+                    <a href="#!">Информация от администратора сервиса</a>
+                    <a href="#!">Написать отзыв об сервисе </a>
+                  </div>
+                </div>
+              </div>
+              <div class="i-s-col i-s__list">
+                  <select class="selectpicker">
+                    <option selected disabled>Список сервисов</option>
+                    <option>sms-activate</option>
+                    <option>sms-activate</option>
+                    <option>sms-activate</option>
+                    <option>sms-activate</option>
+                    <option>sms-activate</option>
+                    <option>sms-activate</option>
+                  </select>
+              </div>
             </div>
-            <p>
-              BestChange следит за состоянием обменных пунктов, а пользователи могут оставлять отзывы об их работе, что сводит риск мошенничества к минимуму.
-            </p> -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="info-table-wrapper">
+              <table class="exch_info_table">
+                <tbody>
+                    <tr>
+                    <td class="bt" width="22%">Статус:</td>
+                    <td colspan="2" width="26%"><span class="exch_act" title="Обменный пункт участвует в мониторинге">Активен</span></td>
+                    <td width="25%" title="Отзывы пользователей обменного пункта CryptoHonest" nowrap="nowrap"><b>Отзывы CryptoHonest:</b></td>
+                    <td id="bc_rw_count"><span class="rwl">0</span><span class="del">/</span><span class="rwr pos">49</span></td>
+                  </tr>
+                  <tr>
+                    <td class="bt">Курсов обмена:</td>
+                    <td colspan="2">477</td>
+                    <td class="bt" title="Transaction Score – характеристика уровня деловой активности владельца аккаунта в платежной системе Advanced Cash">Advanced Cash TS:</td>
+                    <td><span class="nd">—</span></td>
+                  </tr>
+                  <tr>
+                    <td class="bt">Сумма резервов:</td>
+                    <td colspan="2">$60 616 835</td>
+                    <td class="bt" title="Trust Score – характеристика уровня деловой активности владельца аккаунта в платежной системе Perfect Money">Perfect Money TS:</td>
+                    <td><span class="nd">—</span></td>
+                  </tr>
+                  <tr>
+                    <td class="bt">Возраст:</td>
+                    <td colspan="2">3 года и 2 месяца</td>
+                    <td class="bt" title="Business Level – характеристика уровня деловой активности владельца аккаунта в платежной системе WebMoney">WebMoney BL:</td>
+                    <td><span class="nd">—</span></td>
+                  </tr>
+                  <tr>
+                    <td class="bt">На BestChange:</td>
+                    <td colspan="2">1 год и 6 месяцев</td>
+                    <td class="bt">Рейтинг MyWOT:</td>
+                    <td><a target="_blank" class="" href="https://www.bestchange.ru/click.php?url=https%3A%2F%2Fwww.mywot.com%2Fru%2Fscorecard%2Fcryptohonest.ru">3.0</a></td>
+                  </tr>
+                  <tr>
+                    <td class="bt">Страна:</td>
+                    <td width="3%">
+                      <svg class="icon _icon-like">
+                        <use xlink:href="../img/sprite-flags.svg#ru-flags"></use>
+                      </svg>
+                    </td>
+                    <td>Россия</td>
+                    <td class="bt">Форумы:</td>
+                    <td><a target="_blank" href="https://www.bestchange.ru/click.php?url=https%3A%2F%2Fforum.bits.media%2Findex.php%3F%2Ftopic%2F150226-cryptohonest.ru">BitsMedia</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <div class="title-rewiews">
               Отзывы
             </div>
@@ -419,7 +526,16 @@
                       </a>
                     </p>
                     <div class="collapse" id="collapseComment1">
-                      <div class="card card-body">
+                      <div class="review_text">
+                        <div class="rev-text__header">
+                          <div class="user-name">
+                            <span class="review_type rev_type-admin"></span>
+                            <span>Администратор</span>
+                          </div>
+                          <div class="inback">
+                            (13 апреля 2021 | 15:50)
+                          </div>
+                        </div>
                         Здравствуйте, Лана!
                         Спасибо Вам за обмен и отзыв!
                         Меняйте смело!
@@ -433,14 +549,14 @@
                   </div>
                   <div class="review_manage">
                     <form id="form_addComment1" class="form_addComment" hidden>
-                      <label>Ваши комментарии</label>
+                      <label>Ваш комментарий</label>
                       <br/>
                       <textarea id="textMessage1"></textarea>
                       <br/>
                       <input type="button" value="Добавить комментарий" id="addComment1"/>
                     </form>
                     <div id="komments1"></div>
-                    <span class="link comment_add" data-toggle-id="form_addComment1">
+                    <span class="link comment_add" data-addComment="form_addComment1">
                       Комментировать
                     </span>
                     <span class="link" data-del="delete">
@@ -494,7 +610,16 @@
                       </a>
                     </p>
                     <div class="collapse" id="collapseComment2">
-                      <div class="card card-body">
+                      <div class="review_text">
+                        <div class="rev-text__header">
+                          <div class="user-name">
+                            <span class="review_type rev_type-admin"></span>
+                            <span>Администратор</span>
+                          </div>
+                          <div class="inback">
+                            (13 апреля 2021 | 15:50)
+                          </div>
+                        </div>
                         Здравствуйте, Лана!
                         Спасибо Вам за обмен и отзыв!
                         Меняйте смело!
@@ -508,14 +633,14 @@
                   </div>
                   <div class="review_manage">
                     <form id="form_addComment2" class="form_addComment" hidden>
-                      <label>Ваши комментарии</label>
+                      <label>Ваш комментарий</label>
                       <br/>
                       <textarea id="textMessage2"></textarea>
                       <br/>
                       <input type="button" value="Добавить комментарий" id="addComment2"/>
                     </form>
                     <div id="komments2"></div>
-                    <span class="link comment_add" data-toggle-id="form_addComment2">
+                    <span class="link comment_add" data-addComment="form_addComment2">
                       Комментировать
                     </span>
                     <span class="link" data-del="delete">
@@ -559,25 +684,55 @@
                     "Информацию по статусу перевода нам еще не предоставил процессинг ПС"
                   </div>
                   <div class="review_comment_expand">
-
                     <p>
                       <a class="btn" data-toggle="collapse" href="#collapseComment3" role="button" aria-expanded="false" aria-controls="collapseComment">
                         <span>
                           <span class="link">
                             <span>Развернуть</span> 
-                            (<span>2</span>)
+                            (<span>3</span>)
                           </span>
                           <span class="bulletdown"></span>
                         </span>
                       </a>
                     </p>
                     <div class="collapse" id="collapseComment3">
-                      <div class="card card-body">
+                      <div class="review_text">
+                        <div class="rev-text__header">
+                          <div class="user-name">
+                            <span class="review_type rev_type-admin"></span>
+                            <span>Администратор</span>
+                          </div>
+                          <div class="inback">
+                            (13 апреля 2021 | 15:50)
+                          </div>
+                        </div>
                         Здравствуйте, Лана!
                         Спасибо Вам за обмен и отзыв!
                         Меняйте смело!
                       </div>
-                      <div class="card card-body">
+                      <div class="review_text">
+                        <div class="rev-text__header">
+                          <div class="user-name">
+                            <span class="review_type rev_type-user"></span>
+                            <span>Лана</span>
+                          </div>
+                          <div class="inback">
+                            (13 апреля 2021 | 15:50)
+                          </div>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius, quia neque ratione iusto ex modi veniam, 
+                        expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
+                      </div>
+                      <div class="review_text">
+                        <div class="rev-text__header">
+                          <div class="user-name">
+                            <span class="review_type rev_type-admin"></span>
+                            <span>Администратор</span>
+                          </div>
+                          <div class="inback">
+                            (13 апреля 2021 | 15:50)
+                          </div>
+                        </div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius, quia neque ratione iusto ex modi veniam, 
                         expedita ducimus aliquid culpa fuga ut sit architecto. Sint recusandae animi sed distinctio?
                       </div>
@@ -590,14 +745,14 @@
                   </div>
                   <div class="review_manage">
                     <form id="form_addComment3" class="form_addComment" hidden>
-                      <label>Ваши комментарии</label>
+                      <label>Ваш комментарий</label>
                       <br/>
                       <textarea id="textMessage3"></textarea>
                       <br/>
                       <input type="button" value="Добавить комментарий" id="addComment3"/>
                     </form>
                     <div id="komments3"></div>
-                    <span class="link comment_add"  data-toggle-id="form_addComment3">
+                    <span class="link comment_add"  data-addComment="form_addComment3">
                       Комментировать
                     </span>
                     <span class="link" data-del="delete">
@@ -610,86 +765,6 @@
                 </div>
               </div>
             </div>
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- <div id="review1066585" class="review_block_1">
-              <div class="review_header">
-                <table class="review_info">
-                  <tbody>
-                    <tr>
-                      <td width="4%">
-                        <span class="review_type_1"></span>
-                        <a name="1066585"></a>
-                      </td>
-                      <td width="12%" class="nospace">
-                        Сергей
-
-                      </td>
-                      <td width="4%">
-                        <img src="https://www.bestchange.ru/images/countries/ru.png" class="flagicon" title="Россия">
-                      </td>
-                      <td width="15%" class="inback nospace">85.113.157.*</td>
-                      <td width="65%" class="inback">(13 апреля 2021 | 23:37)</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="review_icon"></div>
-              </div>
-              <div class="review_middle">
-                <div class="review_text">Меняю крипту достаточно часто, но услугами этого обменника воспользовался впервые.
-                   И скажу честно, приятно удивлен! И скоростью обмена, и общительной поддержкой, и хорошим курсом. 
-                   Обычно на мелкие обмены курсы не самые выгодные, 
-                   а у этого обменника низкий порог, поэтому с небольшой суммой обмен получается выгодным. 
-                  Спасибо! Обязательно еще вернусь.
-                </div>
-                <div id="reviewcommentexpand1066585" class="review_comment_expand hide">
-                <span id="commentexpandlink1066585" onclick="show_comment_case(1066585)"><span class="link dashlink"><span id="commentexpandtext1066585">Развернуть</span> (<span id="commentexpandcount1066585">0</span>)</span><span id="vcbullet1066585" class="bulletdown"></span></span>
-                <noscript><span class="noscript">(необходим JavaScript)</span></noscript>
-              </div>
-              <div id="commentcase1066585" class="hide">
-                <div id="reviewcomments1066585">
-                  <span id="reviewclaimtype1066585" class="hide">0</span>
-                </div>
-              </div>
-            
-                <div class="review_manage" id="reviewmanage1066585"><span class="link dashlink" onclick="comment_review_menu(1066585, this, event)">Комментировать</span><span class="link dashlink" onclick="delete_review_menu(1066585, this, event)">Удалить</span> <noscript><span class="noscript">(необходим JavaScript)</span></noscript></div>
-                <div class="clear"></div>
-                <div id="reviewcomment1066585" class="hide"></div>
-                <div class="review_bottom"></div>
-              </div>
-            </div> -->
 
 
 
@@ -791,6 +866,8 @@
 
     <script src="../libs/jquery-3.5.1/jquery-3.5.1.slim.min.js"></script>
     <script src="../libs/bootstrap4.6.0/bootstrap.bundle.min.js"></script>
+    <!-- Скрипт отображения select  -->
+    <script src="../libs/bootstrap-select-1.13.14/js/bootstrap-select.min.js"></script>
     <!-- Скрипт отображения svg в IE  -->
     <script src="../libs/svg.js"></script>
     <!-- Скрипты DataTable  -->

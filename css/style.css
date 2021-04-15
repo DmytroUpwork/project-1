@@ -338,21 +338,28 @@ td.t-number {
   transform: rotate(45deg);
 }
 
-._c-a__info {
-  background: #0887BD;
-  color: #fff;
-  text-align: center;
-  margin: 0 23px;
-  padding: 21px 39px;
+.info-services {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 43px;
+}
+
+.i-s-col {
+  padding: 0 10px;
+}
+
+.i-s__info {
+  display: flex;
+}
+
+.i-s__link_wrapper {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
 }
 
-._c-a__info span {
-  color: #FFE15A;
-}
-
-._info_services {
-  padding: 13px 118px;
+.i-s__link {
+  padding-left: 35px;
 }
 
 ._info-connect {
@@ -363,6 +370,42 @@ td.t-number {
   font-size: 18px;
   font-family: 'Montserrat-Light';
 }
+
+
+
+
+
+
+
+.info-table-wrapper {
+  padding: 0 10px 40px;
+}
+
+
+.exch_info_table .exch_act {
+  background-color: #039BE6;
+  border-radius: 3px;
+  color: #fff;
+  padding: 2px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Стили формы обратной связи  */
 .form-feedback {
@@ -839,10 +882,25 @@ div.dataTables_scrollHead table.dataTable {
   margin-right: 10px;
 }
 
+.rev_type-admin {
+  background: url("../img/admin-img.png") no-repeat;
+}
+
 .review_text {
-  position: relative;
-  z-index: 3;
   padding: 12px 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Montserrat-SemiBold';
+}
+
+.review_text:nth-of-type(odd) {
+  padding-left: 40px;
+}
+
+.rev-text__header {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat-Medium';
 }
 
 .hide {
@@ -869,6 +927,7 @@ div.dataTables_scrollHead table.dataTable {
 .form_addComment textarea {
   width: 100%;
 }
+
 .form_addComment textarea {
   min-height: 130px;
 }
