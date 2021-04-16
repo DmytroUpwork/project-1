@@ -259,6 +259,20 @@ td span.positive-reviews {
   padding-bottom: 100px;
 }
 
+._c-a__info {
+  background: #0887BD;
+  color: #fff;
+  margin: 0 23px;
+  padding: 21px 39px;
+  text-align: center;
+  font-size: 18px;
+}
+
+._c-a__info a {
+  color: #00ffff;
+}
+
+
 ._cont-accordion h4 {
   padding: 21px 23px;
 }
