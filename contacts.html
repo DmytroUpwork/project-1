@@ -215,7 +215,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-7">
+                <div class="col-sm-12 col-md-7" id="formAnchor">
                   <form class="form-feedback">
                     <h4>Форма обратной связи</h4>
                     <p>
@@ -273,5 +273,33 @@
     <script src="libs/dataTables/dataTables.bootstrap4.min.js"></script>
     <!-- Мой скрипт  -->
     <script src="js/script-dataTable.js"></script>
+
+
+    <!-- Скрипт плавной прокрутки к якорю  -->
+    <script>
+      if (window.location.hash)
+        scroll(0,0);
+        setTimeout(function(){scroll(0,0);},1);
+
+      $(function(){
+      $('#anchorScroll').on('click',function(e){
+          e.preventDefault();
+          $('html,body').animate({
+              scrollTop:$($(this).attr('href')).offset().top + 'px'
+          },1000);
+      });
+
+      if(window.location.hash){
+          // smooth scroll to the anchor id
+          $('html,body').animate({
+              scrollTop:$(window.location.hash).offset().top + 'px'
+              },1000);
+          }
+      });
+    </script>
+
+
+
+
   </body>
 </html>
