@@ -78,16 +78,100 @@
     margin-bottom: 10px;
   }
 
-  .i-s__link_wrapper {
-    line-height: 56px;
+  .i-s__link {
+    padding-left: 0;
+  }
+
+  .i-s__link_wrapper a {
+    padding-bottom: 20px;
+  }
+
+  ._text-input {
+    padding: 7px 0 8px 28px;
+  }
+
+  /* Стили отзывов  */
+  .user-name {
+    padding-right: 26px;
+  }
+
+  .user-id {
+    padding-right: 33px;
+  }
+
+  .form_addComment {
+    text-align: left;
+  }
+
+  .form_addComment input {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+
+  
+
+  .review_manage {
+    display: block;
+    text-align: right;
+  }
+
+  .review_text {
+    font-size: 12px;
+  }
+
+  .rev-text__header {
+    font-size: 13px;
+  }
+
+
+}
+
+@media screen and (max-width: 470px) {
+  .form_addComment {
+    padding-bottom: 28px;
+  }
+  
+  .review_info {
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .review_text:nth-of-type(odd) {
+    padding-left: 0;
   }
 }
 
 @media screen and (max-width: 425px) {
   .i-s__link_wrapper {
     font-size: 14px;
-    line-height: 56px;
   }
+  .info-table-wrapper {
+    overflow-x: scroll;
+  }
+  .exch_info_table {
+    min-width: 379px;
+  }
+
+  .radiotable { 
+    display: block;
+  }
+
+  .radiotable caption { 
+    padding-bottom: 30px;
+  }
+
+  .rev-text__header {
+    display: block;
+  }
+
+  .rev-text__header .inback {
+    text-align: right;
+  }
+
+
 }
 
 @media (min-width: 992px) {
