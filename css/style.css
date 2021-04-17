@@ -359,6 +359,10 @@ td.t-number {
   display: flex;
 }
 
+.i-s__info > img {
+  box-shadow: 4px 6px 10px -1px rgba(16, 12, 158, 0.4);
+}
+
 .i-s__link_wrapper {
   display: flex;
   flex-direction: column;
