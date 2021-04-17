@@ -261,7 +261,6 @@
       </div>
     </div>
 
-    
     <script src="libs/jquery-3.5.1/jquery-3.5.1.slim.min.js"></script>
     <script src="libs/bootstrap4.6.0/bootstrap.bundle.min.js"></script>
     <!-- Скрипт отображения select  -->
@@ -274,8 +273,6 @@
     <script src="libs/dataTables/dataTables.bootstrap4.min.js"></script>
     <!-- Мой скрипт  -->
     <script src="js/script-dataTable.js"></script>
-
-
     <!-- Скрипт плавной прокрутки к якорю  -->
     <script>
       if (window.location.hash)
@@ -283,7 +280,7 @@
         setTimeout(function(){scroll(0,0);},1);
 
       $(function(){
-      $('#anchorScroll').on('click',function(e){
+        $('#anchorScroll').on('click',function(e){
           e.preventDefault();
           $('html,body').animate({
               scrollTop:$($(this).attr('href')).offset().top + 'px'
@@ -298,9 +295,5 @@
           }
       });
     </script>
-
-
-
-
   </body>
 </html>

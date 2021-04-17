@@ -28,6 +28,7 @@
   #table-list_filter {
     left: -330px;
   }
+
   ._info_services {
     margin: 0;
   }
@@ -37,27 +38,33 @@
   ._cont-table__statistic {
     overflow-x: scroll;
   }
+
   #table-popular_filter,
   #table-service_filter,
   #table-list_filter {
     left: 26px;
   }
+
   .form-feedback {
     padding: 26px 0 36px;
     margin-right: 0;
     margin-top: 0 ;
   }
+
   .accordion > .card .card-body {
     font-size: 13px;
     line-height: 22px;
   }
+
   ._btn-accordion {
     font-size: 17px;
     padding: 0;
   }
+
   .card-body {
     padding: 0;
   }
+
   ._c-a__info,
   ._info_services {
     padding: 21px 10px;
@@ -111,8 +118,6 @@
     border-radius: 3px;
   }
 
-  
-
   .review_manage {
     display: block;
     text-align: right;
@@ -125,8 +130,6 @@
   .rev-text__header {
     font-size: 13px;
   }
-
-
 }
 
 @media screen and (max-width: 470px) {
@@ -148,9 +151,11 @@
   .i-s__link_wrapper {
     font-size: 14px;
   }
+
   .info-table-wrapper {
     overflow-x: scroll;
   }
+
   .exch_info_table {
     min-width: 379px;
   }
@@ -170,8 +175,6 @@
   .rev-text__header .inback {
     text-align: right;
   }
-
-
 }
 
 @media (min-width: 992px) {
@@ -179,7 +182,6 @@
     max-width: 1440px;
   }
 }
-
 
 @media only screen and (max-width: 1600px) and (min-width: 991.98px) {
   .i-s__link_wrapper {
